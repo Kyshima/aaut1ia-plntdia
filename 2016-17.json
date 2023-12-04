@@ -1,0 +1,205 @@
+{
+  "Arhar": {
+    "Andhra Pradesh": 52053.26999999999,
+    "Gujarat": 42398.72,
+    "Karnataka": 33952.45,
+    "Madhya Pradesh": 41220.259999999995,
+    "Maharashtra": 95233.82,
+    "Odisha": 25195.64,
+    "Uttar Pradesh": 49039.55
+  },
+  "Bajra": {
+    "Gujarat": 48281.29000000001,
+    "Haryana": 40885.7,
+    "Maharashtra": 52311.38999999999,
+    "Rajasthan": 28966.649999999998,
+    "Uttar Pradesh": 40227.5
+  },
+  "Cotton": {
+    "Andhra Pradesh": 83117.08000000002,
+    "Gujarat": 73153.88,
+    "Haryana": 74109.59,
+    "Karnataka": 69735.98999999999,
+    "Madhya Pradesh": 82746.6,
+    "Maharashtra": 81064.43,
+    "Odisha": 69087.15,
+    "Punjab": 88365.16,
+    "Rajasthan": 71974.09,
+    "Tamil Nadu": 98676.22999999998
+  },
+  "Groundnut": {
+    "Andhra Pradesh": 59840.590000000004,
+    "Gujarat": 79428.64,
+    "Karnataka": 50288.729999999996,
+    "Maharashtra": 84997.77,
+    "Odisha": 53822.409999999996,
+    "Rajasthan": 68388.45999999999,
+    "Tamil Nadu": 83480.82
+  },
+  "Jowar": {
+    "Andhra Pradesh": 39771.88,
+    "Karnataka": 21120.880000000005,
+    "Madhya Pradesh": 33037,
+    "Maharashtra": 40817.55,
+    "Rajasthan": 32362.53,
+    "Tamil Nadu": 42957
+  },
+  "Maize": {
+    "Andhra Pradesh": 67284.98,
+    "Bihar": 47409.380000000005,
+    "Gujarat": 40000.04999999999,
+    "Himachal Pradesh": 40106.62,
+    "Jharkhand": 38341.23,
+    "Karnataka": 42557.14,
+    "Madhya Pradesh": 38260.91,
+    "Maharashtra": 72873.27,
+    "Odisha": 61457.51,
+    "Punjab": 53064.05,
+    "Rajasthan": 43730.62000000001,
+    "Tamil Nadu": 92710.08,
+    "Uttar Pradesh": 42595.05
+  },
+  "Moong": {
+    "Andhra Pradesh": 23881.910000000003,
+    "Gujarat": 37444.15999999999,
+    "Karnataka": 21621.38,
+    "Maharashtra": 40928.21,
+    "Odisha": 19528.01,
+    "Rajasthan": 24151.710000000003
+  },
+  "Nigerseed": {
+    "Madhya Pradesh": 21371.699999999997,
+    "Odisha": 21027.43
+  },
+  "Paddy": {
+    "Andhra Pradesh": 80303.71999999999,
+    "Assam": 56191.47999999999,
+    "Bihar": 43491.28,
+    "Chhatisgarh": 49225.36,
+    "Gujarat": 57165.590000000004,
+    "Haryana": 82418.74,
+    "Himachal Pradesh": 42345.049999999996,
+    "Jharkhand": 37032.56,
+    "Karnataka": 73998.04000000001,
+    "Kerala": 77273.73000000001,
+    "Madhya Pradesh": 44752.17999999999,
+    "Maharashtra": 78103.00000000001,
+    "Odisha": 61505.71000000001,
+    "Punjab": 76079.54000000001,
+    "Tamil Nadu": 75492.62000000001,
+    "Uttar Pradesh": 58429.3,
+    "Uttarakhand": 49795.2,
+    "West Bengal": 77627.8
+  },
+  "Ragi": {
+    "Karnataka": 46718.909999999996,
+    "Uttarakhand": 31461.37
+  },
+  "Sesamum": {
+    "Andhra Pradesh": 24449.1,
+    "Gujarat": 38906.91,
+    "Madhya Pradesh": 24426.059999999998,
+    "Odisha": 26227.059999999998,
+    "Uttar Pradesh": 19525.010000000002,
+    "Rajasthan": 22167.920000000002,
+    "West Bengal": 44938.81999999999
+  },
+  "Soyabean": {
+    "Andhra Pradesh": 60532.80999999999,
+    "Chhattisgarh": 26402.18,
+    "Madhya Pradesh": 36591.3,
+    "Maharashtra": 56309.60999999999,
+    "Rajasthan": 30107.34
+  },
+  "Sunflower": {
+    "Andhra Pradesh": 34633.41,
+    "Karnataka": 28582.66
+  },
+  "Urad": {
+    "Andhra Pradesh": 28002.090000000004,
+    "Chhatisgarh": 36727.57000000001,
+    "Madhya Pradesh": 28869.93,
+    "Maharashtra": 42215.29,
+    "Odisha": 23247.71,
+    "Tamil Nadu": 37908.119999999995,
+    "Uttar Pradesh": 24617.190000000002
+  },
+  "Barley": {
+    "Rajasthan": 55851.909999999996,
+    "Uttar Pradesh": 44864.43000000001
+  },
+  "Gram": {
+    "Andhra Pradesh": 49331.920000000006,
+    "Bihar": 40474.009999999995,
+    "Chhatisgarh": 33632.61,
+    "Haryana": 42246.509999999995,
+    "Jharkhand": 20280.71,
+    "Karnataka": 30901.670000000006,
+    "Madhya Pradesh": 47842.8,
+    "Maharashtra": 50680.56,
+    "Rajasthan": 43665.07000000001,
+    "Uttar Pradesh": 54370.07
+  },
+  "Lentil": {
+    "Bihar": 31140.29,
+    "Madhya Pradesh": 31979.370000000003,
+    "Uttar Pradesh": 44016.23,
+    "West Bengal": 43473.91
+  },
+  "R&M": {
+    "Assam": 37797.829999999994,
+    "Bihar": 33599.880000000005,
+    "Gujarat": 42564.229999999996,
+    "Haryana": 52516.31,
+    "Madhya Pradesh": 40181.05,
+    "Rajasthan": 43602.36,
+    "Uttar Pradesh": 48771.630000000005,
+    "West Bengal": 50094.81999999999
+  },
+  "Wheat": {
+    "Bihar": 43962.71,
+    "Gujarat": 44267.9,
+    "Haryana": 70042.32,
+    "Himachal Pradesh": 37618.100000000006,
+    "Jharkhand": 28943.18,
+    "Karnataka": 20131.33,
+    "Madhya Pradesh": 46449.96,
+    "Maharashtra": 57729.38,
+    "Punjab": 60973.490000000005,
+    "Rajasthan": 61754.259999999995,
+    "Uttar Pradesh": 58995.21000000001,
+    "Uttarakhand": 48378.83,
+    "West Bengal": 51824.92999999999
+  },
+  "Jute": {
+    "Assam": 87675.29000000001,
+    "Bihar": 31203.310000000005,
+    "Odisha": 70647.87,
+    "West Bengal": 93551.17000000001
+  },
+  "Onion": {
+    "Gujarat": 106419.5,
+    "Karnataka": 54370.2,
+    "Maharashtra": 143681.3
+  },
+  "Potato": {
+    "Assam": 122554.19999999998,
+    "Bihar": 75229.15999999999,
+    "Himachal Pradesh": 86510.92,
+    "Uttar Pradesh": 93220.36,
+    "West Bengal": 131612
+  },
+  "Sugarcane": {
+    "Andhra Pradesh": 181923.7,
+    "Karnataka": 134610.2,
+    "Maharashtra": 154534.3,
+    "Tamil Nadu": 179387,
+    "Uttar Pradesh": 98469.03,
+    "Uttarakhand": 104939.79999999999
+  },
+  "Coconut Ke": {
+    "Kerala": 359423.33,
+    "Tamil Nadu": 239734.56,
+    "Karnataka": 63456.57
+  }
+}

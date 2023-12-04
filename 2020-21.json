@@ -1,0 +1,244 @@
+{
+  "Paddy": {
+    "Andhra Pradesh": 95802.18,
+    "Assam": 54538.07,
+    "Bihar": 51948.91,
+    "Chhattisgarh": 57252.86677,
+    "Gujarat": 68590.46,
+    "Haryana": 97264.32201,
+    "Himachal Pradesh": 60258.96,
+    "Jharkhand ": 60740.17,
+    "Karnataka": 89003.59329,
+    "Kerala ": 96514.84645,
+    "Madhya Pradesh": 61108.53406,
+    "Maharastra": 84488.35,
+    "Odisha": 67607.78671,
+    "Punjab": 97578.27,
+    "Tamil Nadu": 86070.48863,
+    "Telangana": 103975.19,
+    "Uttar Pradesh": 71564.26,
+    "West Bengal": 85548.06
+  },
+  "Wheat": {
+    "Bihar": 57853.38,
+    "Chhattisgarh": 42658.59676,
+    "Gujarat": 50993.66,
+    "Haryana": 73536.2,
+    "Himachal Pradesh": 54311.6,
+    "Jharkhand ": 60606.41,
+    "Karnataka": 39931.3,
+    "Madhya Pradesh": 51489.38108,
+    "Maharastra": 64762.21,
+    "Punjab": 72250.53,
+    "Rajasthan": 74052.11,
+    "Uttar Pradesh": 72548.59,
+    "West Bengal": 62734.91
+  },
+  "Maize": {
+    "Andhra Pradesh": 96440.26,
+    "Bihar": 59157.95,
+    "Gujarat": 65030.29,
+    "Himachal Pradesh": 49596.47,
+    "Karnataka": 58145.06884,
+    "Madhya Pradesh": 45404.99478,
+    "Maharastra": 89175.57,
+    "Odisha": 58175.53,
+    "Punjab": 71779.85,
+    "Rajasthan": 63029.7,
+    "Tamil Nadu": 79589.89845,
+    "Telangana": 90124.29,
+    "Uttar Pradesh": 54051.21
+  },
+  "Jowar": {
+    "Andhra Pradesh": 82357.66,
+    "Karnataka": 35771.02,
+    "Maharastra": 50018.24,
+    "Rajasthan": 40325.97,
+    "Tamil Nadu": 51878.12256
+  },
+  "Bajra": {
+    "Gujarat": 62164.43,
+    "Haryana": 40239.37,
+    "Maharastra": 62228.17,
+    "Rajasthan": 37245.85,
+    "Uttar Pradesh": 41225.19
+  },
+  "Ragi": {
+    "Karnataka": 79025.14,
+    "Odisha": 39626.48
+  },
+  "Barley": {
+    "Himachal Pradesh": 46939.48,
+    "Rajasthan": 69371.63,
+    "Uttar Pradesh": 67396.35
+  },
+  "Arhar": {
+    "Andhra Pradesh": 40398.91,
+    "Gujarat": 54458.08,
+    "Karnataka": 44428.91,
+    "Madhya Pradesh": 35659.52514,
+    "Maharastra": 93422.72428,
+    "Odisha": 21006.59,
+    "Telangana": 48631.95,
+    "Uttar Pradesh": 72383.3
+  },
+  "Moong": {
+    "Andhra Pradesh": 39294.54,
+    "Gujarat": 37817.72,
+    "Karnataka": 36133.03,
+    "Maharastra": 49424.58,
+    "Odisha": 22727.54,
+    "Punjab": 61024.85,
+    "Rajasthan": 30697.5,
+    "Tamil Nadu": 28521.11005,
+    "Telangana": 37908.36,
+    "Uttar Pradesh": 29912.45,
+    "West Bengal": 21922.96
+  },
+  "Urad": {
+    "Andhra Pradesh": 49590.04,
+    "Gujarat": 34940.22,
+    "Himachal Pradesh": 45405.73,
+    "Karnataka": 33937.29,
+    "Madhya Pradesh": 26018.46176,
+    "Maharastra": 43882.15769,
+    "Odisha": 21361.35,
+    "Rajasthan": 37638.32,
+    "Tamil Nadu": 41556.07,
+    "Uttar Pradesh": 28994.42,
+    "West Bengal": 43689.1
+  },
+  "Gram": {
+    "Andhra Pradesh": 64362.98,
+    "Bihar": 50394.69,
+    "Chhattisgarh": 48503.41777,
+    "Gujarat": 50633.22,
+    "Haryana": 44007.38,
+    "Jharkhand": 57480.56,
+    "Karnataka": 38195.54,
+    "Madhya Pradesh": 43200.35182,
+    "Maharastra": 52898.2,
+    "Rajasthan": 46863.89,
+    "Tamil Nadu": 52444.42,
+    "Telangana": 49391.69,
+    "Uttar Pradesh": 53626.96,
+    "West Bengal": 51040.31
+  },
+  "Lentil": {
+    "Bihar": 39885.76,
+    "Madhya Pradesh": 35416.38822,
+    "Uttar Pradesh": 48626.18,
+    "West Bengal": 56010
+  },
+  "Groundnut": {
+    "Andhra Pradesh": 76516.9,
+    "Gujarat": 86336.61,
+    "Karnataka": 61205.35,
+    "Kerala": 67538.99,
+    "Maharastra": 112410.34,
+    "Odisha": 60027.85,
+    "Rajasthan": 84027.64,
+    "Tamil Nadu": 82255.91,
+    "Telangana": 121719.48,
+    "Uttar Pradesh": 40774.66,
+    "West Bengal": 123916.18
+  },
+  "Soyabean": {
+    "Chhattisgarh": 31688.91751,
+    "Gujarat": 47307.7,
+    "Himachal Pradesh": 39996.85,
+    "Karnataka": 45118.69125,
+    "Madhya Pradesh": 37234.7341,
+    "Maharastra": 55379.45361,
+    "Rajasthan": 44919.2,
+    "Telangana": 45117.13
+  },
+  "Sunflower": {
+    "Andhra Pradesh": 57986.72,
+    "Bihar": 59249.5,
+    "Karnataka": 43473.86
+  },
+  "Sesamum": {
+    "Andhra Pradesh": 31663.21,
+    "Gujarat": 42070.49,
+    "Himachal Pradesh": 40617.41,
+    "Kerala": 29253.63,
+    "Madhya Pradesh": 34995.12587,
+    "Odisha": 21193.44,
+    "Rajasthan": 27971.38,
+    "Telangana": 53775.28,
+    "Uttar Pradesh": 22608.9,
+    "West Bengal": 60106.47
+  },
+  "Nigerseed": {
+    "Odisha": 24649.39
+  },
+  "R & M": {
+    "Assam": 36586.71,
+    "Bihar": 44087.26,
+    "Gujarat": 67370.09,
+    "Haryana": 56058.26,
+    "Himachal Pradesh": 31426.44,
+    "Jharkhand": 49396.26,
+    "Madhya Pradesh": 49080.8934,
+    "Odisha": 27026.96,
+    "Punjab": 64888.95,
+    "Rajasthan": 58883.73,
+    "Uttar Pradesh": 60080.31,
+    "West Bengal": 62248.52
+  },
+  "Safflower": {
+    "Karnataka": 22538.11
+  },
+  "Cotton": {
+    "Andhra Pradesh": 90604.02,
+    "Gujarat": 87032.92,
+    "Haryana": 74197.96,
+    "Karnataka": 65859.43,
+    "Madhya Pradesh": 77922.21645,
+    "Maharastra": 79371.74473,
+    "Odisha": 67926.31,
+    "Punjab": 99942.46,
+    "Rajasthan": 91569.22,
+    "Tamil Nadu": 116134.18594,
+    "Telangana": 96759.32
+  },
+  "Jute": {
+    "Assam": 92298.27,
+    "Bihar": 44643.31,
+    "West Bengal": 114247.27
+  },
+  "Sugarcane": {
+    "Andhra Pradesh": 148561.64,
+    "Gujarat": 128919.5,
+    "Haryana": 181887.67,
+    "Karnataka": 139080.59,
+    "Maharastra": 260222.5128,
+    "Tamil Nadu": 248367.99,
+    "Uttar Pradesh": 149283.8
+  },
+  "Onion": {
+    "Andhra Pradesh": 134080.21,
+    "Gujarat": 176655.36,
+    "Karnataka": 85806.57,
+    "Madhya Pradesh": 140516.92,
+    "Maharastra": 213848.76,
+    "Rajasthan": 192832.55,
+    "Tamil Nadu": 217938.75
+  },
+  "Potato": {
+    "Assam": 145117.29,
+    "Bihar": 145508.94,
+    "Gujarat": 199082.57,
+    "Himachal Pradesh": 95074.07,
+    "Jharkhand": 114391.84,
+    "Uttar Pradesh": 144694.25,
+    "West Bengal": 242649.64
+  },
+  "Coconut": {
+    "Andhra Pradesh": 107474.61,
+    "Karnataka": 311608.04,
+    "Kerala": 427202.62,
+    "Tamil Nadu": 261591.78
+  }
+}
