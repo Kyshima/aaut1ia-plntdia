@@ -1,255 +1,1490 @@
 {
   "Arhar": {
-    "Andhra Pradesh": 49928.351739130434,
-    "Bihar": 37001.01000000001,
-    "Chhattisgarh": 21971.9,
-    "Gujarat": 51820.350000000006,
-    "Karnataka": 44925.6,
-    "Madhya Pradesh": 35204.88014,
-    "Maharashtra": 87731.71999999999,
-    "Odisha": 22702.649999999998,
-    "Tamil Nadu": 50883,
-    "Telangana": 32806.71523258032,
-    "Uttar Pradesh": 43301.87
+    "Total Cost": {
+      "Andhra Pradesh": 49928.351739130434,
+      "Bihar": 37001.01000000001,
+      "Chhattisgarh": 21971.9,
+      "Gujarat": 51820.350000000006,
+      "Karnataka": 44925.6,
+      "Madhya Pradesh": 35204.88014,
+      "Maharashtra": 87731.71999999999,
+      "Odisha": 22702.649999999998,
+      "Tamil Nadu": 50883,
+      "Telangana": 32806.71523258032,
+      "Uttar Pradesh": 43301.87
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 50437.47370434782,
+      "Bihar": 37010.847,
+      "Chhattisgarh": 25184.175000000003,
+      "Gujarat": 51820.35,
+      "Karnataka": 46911.84,
+      "Madhya Pradesh": 35204.88,
+      "Maharashtra": 87731.72,
+      "Odisha": 22702.65,
+      "Tamil Nadu": 50883,
+      "Telangana": 33362.449821532035,
+      "Uttar Pradesh": 43382.21
+    },
+    "CultCost": {
+      "Andhra Pradesh": 5818.973218748504,
+      "Bihar": 3110.5641386476846,
+      "Chhattisgarh": 5784.872018564956,
+      "Gujarat": 4861.05,
+      "Karnataka": 4697.472243239489,
+      "Madhya Pradesh": 4747.226000000001,
+      "Maharashtra": 5001.9,
+      "Odisha": 4885.32,
+      "Tamil Nadu": 7316.6,
+      "Telangana": 7967.086609145634,
+      "Uttar Pradesh": 4700.15
+    },
+    "OperCost": {
+      "Andhra Pradesh": 34012.6252173913,
+      "Bihar": 19284.070000000003,
+      "Chhattisgarh": 18115.49,
+      "Gujarat": 36893.090000000004,
+      "Karnataka": 30446.839999999997,
+      "Madhya Pradesh": 23618.940140000002,
+      "Maharashtra": 65029.93999999999,
+      "Odisha": 15057.669999999996,
+      "Tamil Nadu": 33488.08,
+      "Telangana": 24921.961759752274,
+      "Uttar Pradesh": 22457.03
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 15915.72652173913,
+      "Bihar": 17716.940000000002,
+      "Chhattisgarh": 3856.41,
+      "Gujarat": 14927.259999999998,
+      "Karnataka": 14164.83,
+      "Madhya Pradesh": 11585.94,
+      "Maharashtra": 22701.78,
+      "Odisha": 7644.9800000000005,
+      "Tamil Nadu": 17394.920000000002,
+      "Telangana": 7884.753472828044,
+      "Uttar Pradesh": 20844.84
+    }
   },
   "Bajra": {
-    "Gujarat": 47582.65,
-    "Haryana": 40676.09,
-    "Maharashtra": 48486.200000000004,
-    "Rajasthan": 29169.110000000004,
-    "Uttar Pradesh": 34463.8
+    "Total Cost": {
+      "Gujarat": 47582.65,
+      "Haryana": 40676.09,
+      "Maharashtra": 48486.200000000004,
+      "Rajasthan": 29169.110000000004,
+      "Uttar Pradesh": 34463.8
+    },
+    "ProdCost": {
+      "Gujarat": 47582.65,
+      "Haryana": 40676.55,
+      "Maharashtra": 48486.2,
+      "Rajasthan": 29169.11,
+      "Uttar Pradesh": 34463.8
+    },
+    "CultCost": {
+      "Gujarat": 1310.55,
+      "Haryana": 1742.81,
+      "Maharashtra": 2113.34,
+      "Rajasthan": 1586.0130000000001,
+      "Uttar Pradesh": 1353.36
+    },
+    "OperCost": {
+      "Gujarat": 35109.62,
+      "Haryana": 24973.84,
+      "Maharashtra": 34787.530000000006,
+      "Rajasthan": 23750.390000000003,
+      "Uttar Pradesh": 22045.62
+    },
+    "FixedCost": {
+      "Gujarat": 12473.029999999999,
+      "Haryana": 15702.25,
+      "Maharashtra": 13698.67,
+      "Rajasthan": 5418.72,
+      "Uttar Pradesh": 12418.18
+    }
   },
   "Cotton": {
-    "Andhra Pradesh": 94613.34306501548,
-    "Gujarat": 85349.91,
-    "Haryana": 70242.44,
-    "Karnataka": 60146.479999999996,
-    "Madhya Pradesh": 78659.8597,
-    "Maharashtra": 82932.2,
-    "Odisha": 69689.45,
-    "Punjab": 86268.41,
-    "Rajasthan": 73913.41,
-    "Tamil Nadu": 124010.31,
-    "Telangana": 90483.04016893051
+    "Total Cost": {
+      "Andhra Pradesh": 94613.34306501548,
+      "Gujarat": 85349.91,
+      "Haryana": 70242.44,
+      "Karnataka": 60146.479999999996,
+      "Madhya Pradesh": 78659.8597,
+      "Maharashtra": 82932.2,
+      "Odisha": 69689.45,
+      "Punjab": 86268.41,
+      "Rajasthan": 73913.41,
+      "Tamil Nadu": 124010.31,
+      "Telangana": 90483.04016893051
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 94656.7091876161,
+      "Gujarat": 85349.91,
+      "Haryana": 70242.44,
+      "Karnataka": 68329.49999999999,
+      "Madhya Pradesh": 78659.86,
+      "Maharashtra": 82932.2,
+      "Odisha": 69689.45,
+      "Punjab": 86268.41,
+      "Rajasthan": 73913.41,
+      "Tamil Nadu": 124010.31,
+      "Telangana": 90483.04232373553
+    },
+    "CultCost": {
+      "Andhra Pradesh": 5417.291951135469,
+      "Gujarat": 4395.53,
+      "Haryana": 5222.16,
+      "Karnataka": 5507.094106817668,
+      "Madhya Pradesh": 4484.975,
+      "Maharashtra": 6101.76,
+      "Odisha": 4776.88,
+      "Punjab": 4490.365000000001,
+      "Rajasthan": 4387.834000000001,
+      "Tamil Nadu": 7427.6,
+      "Telangana": 6382.9624365951495
+    },
+    "OperCost": {
+      "Andhra Pradesh": 63799.482817337455,
+      "Gujarat": 60695.51,
+      "Haryana": 43853.06,
+      "Karnataka": 43367.38,
+      "Madhya Pradesh": 56556.63969999999,
+      "Maharashtra": 63275.03,
+      "Odisha": 51799.53999999999,
+      "Punjab": 49450.159999999996,
+      "Rajasthan": 52071.740000000005,
+      "Tamil Nadu": 94082.89,
+      "Telangana": 64718.583196838365
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 30813.860247678018,
+      "Gujarat": 24654.4,
+      "Haryana": 26389.38,
+      "Karnataka": 14540.36,
+      "Madhya Pradesh": 22103.22,
+      "Maharashtra": 19657.17,
+      "Odisha": 17889.91,
+      "Punjab": 36818.25,
+      "Rajasthan": 21841.670000000002,
+      "Tamil Nadu": 29927.42,
+      "Telangana": 25764.456972092146
+    }
   },
   "Groundnut": {
-    "Andhra Pradesh": 63981.87729251702,
-    "Gujarat": 74734.41,
-    "Karnataka": 55627.13,
-    "Madhya Pradesh": 62519.08,
-    "Maharashtra": 75509,
-    "Odisha": 58472.53999999998,
-    "Rajasthan": 60690.21,
-    "Tamil Nadu": 91452.23000000001,
-    "Telangana": 107079.90000000001,
-    "Uttar Pradesh": 44864.06
+    "Total Cost": {
+      "Andhra Pradesh": 63981.87729251702,
+      "Gujarat": 74734.41,
+      "Karnataka": 55627.13,
+      "Madhya Pradesh": 62519.08,
+      "Maharashtra": 75509,
+      "Odisha": 58472.53999999998,
+      "Rajasthan": 60690.21,
+      "Tamil Nadu": 91452.23000000001,
+      "Telangana": 107079.90000000001,
+      "Uttar Pradesh": 44864.06
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 64022.1425029932,
+      "Gujarat": 74734.41,
+      "Karnataka": 62130.009999999995,
+      "Madhya Pradesh": 62519.08,
+      "Maharashtra": 75509,
+      "Odisha": 58472.54,
+      "Rajasthan": 60690.21,
+      "Tamil Nadu": 91452.23,
+      "Telangana": 107079.9,
+      "Uttar Pradesh": 44864.06
+    },
+    "CultCost": {
+      "Andhra Pradesh": 5422.638956268983,
+      "Gujarat": 3772.3,
+      "Karnataka": 6654.627303680112,
+      "Madhya Pradesh": 4379.441000000001,
+      "Maharashtra": 5999.39,
+      "Odisha": 6581.01,
+      "Rajasthan": 3157.616,
+      "Tamil Nadu": 5559.05,
+      "Telangana": 5177.9529999999995,
+      "Uttar Pradesh": 4500.2
+    },
+    "OperCost": {
+      "Andhra Pradesh": 46918.05061224491,
+      "Gujarat": 55208.85,
+      "Karnataka": 42159.38,
+      "Madhya Pradesh": 47652.38,
+      "Maharashtra": 60638.88,
+      "Odisha": 45723.57999999998,
+      "Rajasthan": 43170.28,
+      "Tamil Nadu": 56088.15,
+      "Telangana": 74276.12000000001,
+      "Uttar Pradesh": 33218.17
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 17063.82668027211,
+      "Gujarat": 19525.56,
+      "Karnataka": 13467.75,
+      "Madhya Pradesh": 14866.7,
+      "Maharashtra": 14870.119999999999,
+      "Odisha": 12748.960000000001,
+      "Rajasthan": 17519.93,
+      "Tamil Nadu": 35364.08,
+      "Telangana": 32803.78,
+      "Uttar Pradesh": 11645.89
+    }
   },
   "Jowar": {
-    "Andhra Pradesh": 59686.465071428574,
-    "Karnataka": 30711.6,
-    "Madhya Pradesh": 37530.722780000004,
-    "Maharashtra": 50242.47,
-    "Rajasthan": 32707.06,
-    "Tamil Nadu": 51088.1,
-    "Telangana": 54687.59212978369
+    "Total Cost": {
+      "Andhra Pradesh": 59686.465071428574,
+      "Karnataka": 30711.6,
+      "Madhya Pradesh": 37530.722780000004,
+      "Maharashtra": 50242.47,
+      "Rajasthan": 32707.06,
+      "Tamil Nadu": 51088.1,
+      "Telangana": 54687.59212978369
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 59940.10368000001,
+      "Karnataka": 33565.84,
+      "Madhya Pradesh": 37530.72,
+      "Maharashtra": 50242.47,
+      "Rajasthan": 32707.06,
+      "Tamil Nadu": 51130.09,
+      "Telangana": 54687.587861896835
+    },
+    "CultCost": {
+      "Andhra Pradesh": 1570.860528688351,
+      "Karnataka": 2614.17,
+      "Madhya Pradesh": 1339.6790000000003,
+      "Maharashtra": 2698.59,
+      "Rajasthan": 2349.4790000000003,
+      "Tamil Nadu": 4070.35,
+      "Telangana": 5013.919550868588
+    },
+    "OperCost": {
+      "Andhra Pradesh": 39484.935142857146,
+      "Karnataka": 22035.27,
+      "Madhya Pradesh": 28266.202780000003,
+      "Maharashtra": 35761.770000000004,
+      "Rajasthan": 26260.24,
+      "Tamil Nadu": 38094.729999999996,
+      "Telangana": 43023.87347753743
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 20201.529928571428,
+      "Karnataka": 8676.33,
+      "Madhya Pradesh": 9264.52,
+      "Maharashtra": 14480.7,
+      "Rajasthan": 6446.82,
+      "Tamil Nadu": 12993.370000000003,
+      "Telangana": 11663.718652246254
+    }
   },
   "Maize": {
-    "Andhra Pradesh": 61987.67098214285,
-    "Bihar": 48463.28999999999,
-    "Chhattisgarh": 49158.38,
-    "Gujarat": 42630.93,
-    "Himachal Pradesh": 39155.59,
-    "Jharkhand": 65877.02,
-    "Karnataka": 47850.15999999999,
-    "Madhya Pradesh": 43746.46829,
-    "Maharashtra": 74751.06,
-    "Odisha": 48679.34999999999,
-    "Punjab": 70719.19,
-    "Rajasthan": 45604.95999999999,
-    "Tamil Nadu": 96050.07,
-    "Telangana": 85436.32982179594,
-    "Uttar Pradesh": 47425.91
+    "Total Cost": {
+      "Andhra Pradesh": 61987.67098214285,
+      "Bihar": 48463.28999999999,
+      "Chhattisgarh": 49158.38,
+      "Gujarat": 42630.93,
+      "Himachal Pradesh": 39155.59,
+      "Jharkhand": 65877.02,
+      "Karnataka": 47850.15999999999,
+      "Madhya Pradesh": 43746.46829,
+      "Maharashtra": 74751.06,
+      "Odisha": 48679.34999999999,
+      "Punjab": 70719.19,
+      "Rajasthan": 45604.95999999999,
+      "Tamil Nadu": 96050.07,
+      "Telangana": 85436.32982179594,
+      "Uttar Pradesh": 47425.91
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 62400.262714285716,
+      "Bihar": 49305.0168,
+      "Chhattisgarh": 49443.392499999994,
+      "Gujarat": 42630.93,
+      "Himachal Pradesh": 39155.59,
+      "Jharkhand": 65877.02,
+      "Karnataka": 51868.83,
+      "Madhya Pradesh": 43838.736000000004,
+      "Maharashtra": 74751.06,
+      "Odisha": 48679.35,
+      "Punjab": 70719.19,
+      "Rajasthan": 46786.3591,
+      "Tamil Nadu": 96050.07,
+      "Telangana": 86232.42465445858,
+      "Uttar Pradesh": 47425.91
+    },
+    "CultCost": {
+      "Andhra Pradesh": 1240.5837753077953,
+      "Bihar": 1153.5220154129524,
+      "Chhattisgarh": 1721.7749005045025,
+      "Gujarat": 2003.47,
+      "Himachal Pradesh": 1592.17,
+      "Jharkhand": 1381.4900000000002,
+      "Karnataka": 1715.88,
+      "Madhya Pradesh": 1258.2833079089085,
+      "Maharashtra": 1057.01,
+      "Odisha": 1379.03,
+      "Punjab": 1743.2250000000001,
+      "Rajasthan": 1775.3769388939677,
+      "Tamil Nadu": 1677.09,
+      "Telangana": 1467.4873501503862,
+      "Uttar Pradesh": 1699.36
+    },
+    "OperCost": {
+      "Andhra Pradesh": 39841.84651785714,
+      "Bihar": 31424.72,
+      "Chhattisgarh": 38702.73,
+      "Gujarat": 35613.5,
+      "Himachal Pradesh": 27770.69,
+      "Jharkhand": 41021.36000000001,
+      "Karnataka": 36203.61999999999,
+      "Madhya Pradesh": 32238.36829,
+      "Maharashtra": 52578.32,
+      "Odisha": 34306.03999999999,
+      "Punjab": 45098.58000000001,
+      "Rajasthan": 34922.509999999995,
+      "Tamil Nadu": 60674.90000000001,
+      "Telangana": 51569.33613853126,
+      "Uttar Pradesh": 32880.43
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 22145.824464285713,
+      "Bihar": 17038.569999999996,
+      "Chhattisgarh": 10455.65,
+      "Gujarat": 7017.429999999999,
+      "Himachal Pradesh": 11384.9,
+      "Jharkhand": 24855.66,
+      "Karnataka": 11646.539999999999,
+      "Madhya Pradesh": 11508.1,
+      "Maharashtra": 22172.739999999998,
+      "Odisha": 14373.31,
+      "Punjab": 25620.61,
+      "Rajasthan": 10682.45,
+      "Tamil Nadu": 35375.17,
+      "Telangana": 33866.99368326468,
+      "Uttar Pradesh": 14545.48
+    }
   },
   "Moong": {
-    "Andhra Pradesh": 23314.214820143883,
-    "Bihar": 24709.25,
-    "Gujarat": 29436.719999999998,
-    "Karnataka": 29154.529999999995,
-    "Madhya Pradesh": 21794.75,
-    "Maharashtra": 41921.64,
-    "Odisha": 20299.44,
-    "Rajasthan": 22343.09,
-    "Tamil Nadu": 31048.82,
-    "Telangana": 33207.2,
-    "Uttar Pradesh": 28715.89,
-    "West Bengal": 32917.72
+    "Total Cost": {
+      "Andhra Pradesh": 23314.214820143883,
+      "Bihar": 24709.25,
+      "Gujarat": 29436.719999999998,
+      "Karnataka": 29154.529999999995,
+      "Madhya Pradesh": 21794.75,
+      "Maharashtra": 41921.64,
+      "Odisha": 20299.44,
+      "Rajasthan": 22343.09,
+      "Tamil Nadu": 31048.82,
+      "Telangana": 33207.2,
+      "Uttar Pradesh": 28715.89,
+      "West Bengal": 32917.72
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 25115.795004316547,
+      "Bihar": 25681.7176,
+      "Gujarat": 29480.36,
+      "Karnataka": 31535.82,
+      "Madhya Pradesh": 21794.75,
+      "Maharashtra": 41921.64,
+      "Odisha": 20299.44,
+      "Rajasthan": 22482.3452,
+      "Tamil Nadu": 31048.82,
+      "Telangana": 33207.2,
+      "Uttar Pradesh": 28715.89,
+      "West Bengal": 34384.31
+    },
+    "CultCost": {
+      "Andhra Pradesh": 4176.033407636334,
+      "Bihar": 6931.957611700629,
+      "Gujarat": 8638.66,
+      "Karnataka": 5252.59,
+      "Madhya Pradesh": 6227.782,
+      "Maharashtra": 7144.6,
+      "Odisha": 5857.96,
+      "Rajasthan": 5283.203375596501,
+      "Tamil Nadu": 7060.92,
+      "Telangana": 17080.140000000003,
+      "Uttar Pradesh": 5997.26,
+      "West Bengal": 5529.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 16296.152661870503,
+      "Bihar": 14649.83,
+      "Gujarat": 23504.92,
+      "Karnataka": 21048.749999999996,
+      "Madhya Pradesh": 17136.420000000002,
+      "Maharashtra": 31847.640000000003,
+      "Odisha": 14797.169999999998,
+      "Rajasthan": 17564.36,
+      "Tamil Nadu": 19096,
+      "Telangana": 27484.13,
+      "Uttar Pradesh": 20954.05,
+      "West Bengal": 24751.859999999997
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 7018.062158273381,
+      "Bihar": 10059.420000000002,
+      "Gujarat": 5931.799999999999,
+      "Karnataka": 8105.78,
+      "Madhya Pradesh": 4658.33,
+      "Maharashtra": 10074,
+      "Odisha": 5502.2699999999995,
+      "Rajasthan": 4778.73,
+      "Tamil Nadu": 11952.82,
+      "Telangana": 5723.07,
+      "Uttar Pradesh": 7761.84,
+      "West Bengal": 8165.860000000001
+    }
   },
   "Nigerseed": {
-    "Odisha": 22662.689999999995
+    "Total Cost": {
+      "Odisha": 22662.689999999995
+    },
+    "ProdCost": {
+      "Odisha": 22662.69
+    },
+    "CultCost": {
+      "Odisha": 8955.07
+    },
+    "OperCost": {
+      "Odisha": 17276.059999999998
+    },
+    "FixedCost": {
+      "Odisha": 5386.629999999999
+    }
   },
   "Paddy": {
-    "Andhra Pradesh": 90821.8895266005,
-    "Assam": 52019.18,
-    "Bihar": 47707.15,
-    "Chhatisgarh": 51266.76,
-    "Gujarat": 57164.68,
-    "Haryana": 83875.50,
-    "Himachal Pradesh": 48859.51,
-    "Jharkhand": 62749.73,
-    "Karnataka": 80763.39,
-    "Kerala": 97077.58,
-    "Madhya Pradesh": 46294.85,
-    "Maharashtra": 87886.29,
-    "Odisha": 60103.66,
-    "Punjab": 81377.82,
-    "Tamil Nadu": 83861.03,
-    "Telangana": 91722.82,
-    "Uttar Pradesh": 61381.63,
-    "Uttarakhand": 56616.50,
-    "West Bengal": 78057.17
+    "Total Cost": {
+      "Andhra Pradesh": 90821.88952660054,
+      "Assam": 52019.18,
+      "Bihar": 47707.15,
+      "Chhatisgarh": 51266.76,
+      "Gujarat": 57164.67999999999,
+      "Haryana": 83875.5,
+      "Himachal Pradesh": 48859.51,
+      "Jharkhand": 62749.73000000001,
+      "Karnataka": 80763.39,
+      "Kerala": 97077.58446000001,
+      "Madhya Pradesh": 46294.85019999999,
+      "Maharashtra": 87886.29,
+      "Odisha": 60103.66,
+      "Punjab": 81377.81999999998,
+      "Tamil Nadu": 83861.03,
+      "Telangana": 91722.82065152295,
+      "Uttar Pradesh": 61381.63,
+      "Uttarakhand": 56616.5,
+      "West Bengal": 78057.17000000001
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 91553.37479513075,
+      "Assam": 52398.66,
+      "Bihar": 47707.15,
+      "Chhatisgarh": 54340.322499999995,
+      "Gujarat": 57164.68,
+      "Haryana": 83875.97,
+      "Himachal Pradesh": 48859.51,
+      "Jharkhand": 62749.73,
+      "Karnataka": 82739.12,
+      "Kerala": 97077.58,
+      "Madhya Pradesh": 46570.4867,
+      "Maharashtra": 88276.48,
+      "Odisha": 60103.66,
+      "Punjab": 81377.82,
+      "Tamil Nadu": 83861.03,
+      "Telangana": 92115.94206941532,
+      "Uttar Pradesh": 61514.66,
+      "Uttarakhand": 56616.5,
+      "West Bengal": 78057.17
+    },
+    "CultCost": {
+      "Andhra Pradesh": 1485.8866412765942,
+      "Assam": 1571.71,
+      "Bihar": 1397.308,
+      "Chhatisgarh": 1483.8197476823332,
+      "Gujarat": 1227.55,
+      "Haryana": 1592.6,
+      "Himachal Pradesh": 1514.41,
+      "Jharkhand": 1446.335,
+      "Karnataka": 2399.02,
+      "Kerala": 2638.779,
+      "Madhya Pradesh": 1741.5320503779417,
+      "Maharashtra": 3019,
+      "Odisha": 1533.41,
+      "Punjab": 1190.794,
+      "Tamil Nadu": 1838.55,
+      "Telangana": 2039.4891926633422,
+      "Uttar Pradesh": 1809.93,
+      "Uttarakhand": 1863.99,
+      "West Bengal": 1795.33
+    },
+    "OperCost": {
+      "Andhra Pradesh": 56037.89168620379,
+      "Assam": 38984.03,
+      "Bihar": 32988.32,
+      "Chhatisgarh": 36498.37201000001,
+      "Gujarat": 42011.77,
+      "Haryana": 44997.4,
+      "Himachal Pradesh": 33051.14,
+      "Jharkhand": 39433.16000000001,
+      "Karnataka": 62812.909999999996,
+      "Kerala": 75969.94446000001,
+      "Madhya Pradesh": 33397.960199999994,
+      "Maharashtra": 69689.87999999999,
+      "Odisha": 44647.25,
+      "Punjab": 37467.219999999994,
+      "Tamil Nadu": 59386.46000000001,
+      "Telangana": 56662.00026146122,
+      "Uttar Pradesh": 43329.05,
+      "Uttarakhand": 37897.45,
+      "West Bengal": 59867.23
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 34783.99784039675,
+      "Assam": 13035.150000000001,
+      "Bihar": 14718.830000000002,
+      "Chhatisgarh": 14768.39,
+      "Gujarat": 15152.91,
+      "Haryana": 38878.1,
+      "Himachal Pradesh": 15808.37,
+      "Jharkhand": 23316.57,
+      "Karnataka": 17950.48,
+      "Kerala": 21107.64,
+      "Madhya Pradesh": 12896.89,
+      "Maharashtra": 18196.41,
+      "Odisha": 15456.41,
+      "Punjab": 43910.59999999999,
+      "Tamil Nadu": 24474.57,
+      "Telangana": 35060.820390061745,
+      "Uttar Pradesh": 18052.58,
+      "Uttarakhand": 18719.05,
+      "West Bengal": 18189.940000000002
+    }
   },
   "Ragi": {
-    "Karnataka": 60198.73,
-    "Maharashtra": 70516.15000000001,
-    "Odisha": 25515.530000000002,
-    "Tamil Nadu": 58314.09,
-    "Uttarakhand": 47650.09
+    "Total Cost": {
+      "Karnataka": 60198.73,
+      "Maharashtra": 70516.15000000001,
+      "Odisha": 25515.530000000002,
+      "Tamil Nadu": 58314.09,
+      "Uttarakhand": 47650.09
+    },
+    "ProdCost": {
+      "Karnataka": 61775.72,
+      "Maharashtra": 70516.15,
+      "Odisha": 26058.03,
+      "Tamil Nadu": 58314.09,
+      "Uttarakhand": 47650.09
+    },
+    "CultCost": {
+      "Karnataka": 3059.45,
+      "Maharashtra": 4380.4,
+      "Odisha": 4271.81,
+      "Tamil Nadu": 5233.99,
+      "Uttarakhand": 4497.22
+    },
+    "OperCost": {
+      "Karnataka": 48060.48,
+      "Maharashtra": 58614.27000000001,
+      "Odisha": 19506.410000000003,
+      "Tamil Nadu": 44282.59,
+      "Uttarakhand": 37657.8
+    },
+    "FixedCost": {
+      "Karnataka": 12138.25,
+      "Maharashtra": 11901.880000000001,
+      "Odisha": 6009.12,
+      "Tamil Nadu": 14031.500000000002,
+      "Uttarakhand": 9992.29
+    }
   },
   "Sesamum": {
-    "Gujarat": 52200.81,
-    "Karnataka": 19325.24,
-    "Madhya Pradesh": 34873.834539999996,
-    "Odisha": 13336.71,
-    "Rajasthan": 22874.62,
-    "Tamil Nadu": 55002.17,
-    "Uttar Pradesh": 19784.65,
-    "West Bengal": 54750.89
+    "Total Cost": {
+      "Gujarat": 52200.81,
+      "Karnataka": 19325.24,
+      "Madhya Pradesh": 34873.834539999996,
+      "Odisha": 13336.71,
+      "Rajasthan": 22874.62,
+      "Tamil Nadu": 55002.17,
+      "Uttar Pradesh": 19784.65,
+      "West Bengal": 54750.89
+    },
+    "ProdCost": {
+      "Gujarat": 52200.81,
+      "Karnataka": 23325.31,
+      "Madhya Pradesh": 34999.8113,
+      "Odisha": 13336.71,
+      "Rajasthan": 23722.338000000003,
+      "Tamil Nadu": 55002.17,
+      "Uttar Pradesh": 20897.87,
+      "West Bengal": 54750.89
+    },
+    "CultCost": {
+      "Gujarat": 7128.08,
+      "Karnataka": 21804.29,
+      "Madhya Pradesh": 6421.647782610067,
+      "Odisha": 5190.67,
+      "Rajasthan": 10770.032767059516,
+      "Tamil Nadu": 10992.91,
+      "Uttar Pradesh": 7789.88,
+      "West Bengal": 5400.03
+    },
+    "OperCost": {
+      "Gujarat": 37742.12,
+      "Karnataka": 17964.25,
+      "Madhya Pradesh": 24419.684539999995,
+      "Odisha": 9495.5,
+      "Rajasthan": 16274.269999999999,
+      "Tamil Nadu": 37139.6,
+      "Uttar Pradesh": 11644.03,
+      "West Bengal": 42320.729999999996
+    },
+    "FixedCost": {
+      "Gujarat": 14458.689999999999,
+      "Karnataka": 1360.99,
+      "Madhya Pradesh": 10454.15,
+      "Odisha": 3841.21,
+      "Rajasthan": 6600.349999999999,
+      "Tamil Nadu": 17862.57,
+      "Uttar Pradesh": 8140.62,
+      "West Bengal": 12430.16
+    }
   },
   "Soyabean": {
-    "Chhattisgarh": 24081.92,
-    "Karnataka": 30383.110000000004,
-    "Madhya Pradesh": 34753.40401,
-    "Maharashtra": 46154.4,
-    "Rajasthan": 28066.709999999995,
-    "Telangana": 50421.07
+    "Total Cost": {
+      "Chhattisgarh": 24081.92,
+      "Karnataka": 30383.110000000004,
+      "Madhya Pradesh": 34753.40401,
+      "Maharashtra": 46154.4,
+      "Rajasthan": 28066.709999999995,
+      "Telangana": 50421.07
+    },
+    "ProdCost": {
+      "Chhattisgarh": 24886.585,
+      "Karnataka": 31901.82,
+      "Madhya Pradesh": 34837.658,
+      "Maharashtra": 46154.4,
+      "Rajasthan": 28066.71,
+      "Telangana": 50421.07
+    },
+    "CultCost": {
+      "Chhattisgarh": 4351.425256927848,
+      "Karnataka": 3617.26,
+      "Madhya Pradesh": 3635.8903936384163,
+      "Maharashtra": 3844.74,
+      "Rajasthan": 2543.3650000000002,
+      "Telangana": 3343.0870000000004
+    },
+    "OperCost": {
+      "Chhattisgarh": 17257.55,
+      "Karnataka": 23212.200000000004,
+      "Madhya Pradesh": 24728.144009999996,
+      "Maharashtra": 35940.8,
+      "Rajasthan": 20294.319999999996,
+      "Telangana": 34709.61
+    },
+    "FixedCost": {
+      "Chhattisgarh": 6824.370000000001,
+      "Karnataka": 7170.91,
+      "Madhya Pradesh": 10025.26,
+      "Maharashtra": 10213.6,
+      "Rajasthan": 7772.39,
+      "Telangana": 15711.460000000001
+    }
   },
   "Sunflower": {
-    "Karnataka": 28467.2
+    "Total Cost": {
+      "Karnataka": 28467.2
+    },
+    "ProdCost": {
+      "Karnataka": 31215.690000000002
+    },
+    "CultCost": {
+      "Karnataka": 4227.5168866551685
+    },
+    "OperCost": {
+      "Karnataka": 20528.73
+    },
+    "FixedCost": {
+      "Karnataka": 7938.47
+    }
   },
   "Urad": {
-    "Andhra Pradesh": 34140.075607940445,
-    "Chhatisgarh": 32428.4,
-    "Gujarat": 33881.1,
-    "Karnataka": 23243.249999999996,
-    "Madhya Pradesh": 25878.08664,
-    "Maharashtra": 38117.78,
-    "Odisha": 19015.129999999997,
-    "Rajasthan": 29495.260000000002,
-    "Tamil Nadu": 52440.31999999999,
-    "Telangana": 45316.03,
-    "Uttar Pradesh": 20670.64
+    "Total Cost": {
+      "Andhra Pradesh": 34140.075607940445,
+      "Chhatisgarh": 32428.4,
+      "Gujarat": 33881.1,
+      "Karnataka": 23243.249999999996,
+      "Madhya Pradesh": 25878.08664,
+      "Maharashtra": 38117.78,
+      "Odisha": 19015.129999999997,
+      "Rajasthan": 29495.260000000002,
+      "Tamil Nadu": 52440.31999999999,
+      "Telangana": 45316.03,
+      "Uttar Pradesh": 20670.64
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 34555.44227047146,
+      "Chhatisgarh": 33578.7725,
+      "Gujarat": 33900.26,
+      "Karnataka": 24550.98,
+      "Madhya Pradesh": 25878.09,
+      "Maharashtra": 38117.78,
+      "Odisha": 19015.13,
+      "Rajasthan": 29510.562400000003,
+      "Tamil Nadu": 52440.32,
+      "Telangana": 45316.03,
+      "Uttar Pradesh": 20670.64
+    },
+    "CultCost": {
+      "Andhra Pradesh": 4607.674727793404,
+      "Chhatisgarh": 12236.058831955523,
+      "Gujarat": 4699.79,
+      "Karnataka": 5852.981306084995,
+      "Madhya Pradesh": 4361.247,
+      "Maharashtra": 6205.87,
+      "Odisha": 5321.77,
+      "Rajasthan": 4930.071356059837,
+      "Tamil Nadu": 6933.21,
+      "Telangana": 13074.314,
+      "Uttar Pradesh": 6159.45
+    },
+    "OperCost": {
+      "Andhra Pradesh": 22614.819305210916,
+      "Chhatisgarh": 27510.450000000004,
+      "Gujarat": 25079.629999999997,
+      "Karnataka": 17626.469999999998,
+      "Madhya Pradesh": 18479.82664,
+      "Maharashtra": 31133.89,
+      "Odisha": 13565.72,
+      "Rajasthan": 21315.84,
+      "Tamil Nadu": 30593.829999999998,
+      "Telangana": 31913.54,
+      "Uttar Pradesh": 14852.55
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 11525.256302729527,
+      "Chhatisgarh": 4917.95,
+      "Gujarat": 8801.470000000001,
+      "Karnataka": 5616.779999999999,
+      "Madhya Pradesh": 7398.26,
+      "Maharashtra": 6983.889999999999,
+      "Odisha": 5449.409999999999,
+      "Rajasthan": 8179.42,
+      "Tamil Nadu": 21846.489999999998,
+      "Telangana": 13402.49,
+      "Uttar Pradesh": 5818.09
+    }
   },
   "Barley": {
-    "Himachal Pradesh": 54731.67,
-    "Rajasthan": 62510.159999999996,
-    "Uttar Pradesh": 55844.96
+    "Total Cost": {
+      "Himachal Pradesh": 54731.67,
+      "Rajasthan": 62510.159999999996,
+      "Uttar Pradesh": 55844.96
+    },
+    "ProdCost": {
+      "Himachal Pradesh": 54731.67,
+      "Rajasthan": 63548.85,
+      "Uttar Pradesh": 55844.96
+    },
+    "CultCost": {
+      "Himachal Pradesh": 4483.81,
+      "Rajasthan": 1538.16,
+      "Uttar Pradesh": 1576.795
+    },
+    "OperCost": {
+      "Himachal Pradesh": 40229.1,
+      "Rajasthan": 43938.189999999995,
+      "Uttar Pradesh": 31701.43
+    },
+    "FixedCost": {
+      "Himachal Pradesh": 14502.57,
+      "Rajasthan": 18571.97,
+      "Uttar Pradesh": 24143.53
+    }
   },
   "Gram": {
-    "Andhra Pradesh": 54040.08026923077,
-    "Bihar": 42003.399999999994,
-    "Chhatisgarh": 36464.04000000001,
-    "Gujarat": 41634.63,
-    "Haryana": 45193.479999999996,
-    "Jharkhand": 27574.079999999998,
-    "Karnataka": 38444.479999999996,
-    "Madhya Pradesh": 42067.590000000004,
-    "Maharashtra": 54074.40000000001,
-    "Punjab": 63753.63,
-    "Rajasthan": 41588.31,
-    "Telangana": 50848.882456958236,
-    "Uttar Pradesh": 44677.899999999994,
-    "West Bengal": 50748.729999999996
+    "Total Cost": {
+      "Andhra Pradesh": 54040.08026923077,
+      "Bihar": 42003.399999999994,
+      "Chhatisgarh": 36464.04000000001,
+      "Gujarat": 41634.63,
+      "Haryana": 45193.479999999996,
+      "Jharkhand": 27574.079999999998,
+      "Karnataka": 38444.479999999996,
+      "Madhya Pradesh": 42067.590000000004,
+      "Maharashtra": 54074.40000000001,
+      "Punjab": 63753.63,
+      "Rajasthan": 41588.31,
+      "Telangana": 50848.882456958236,
+      "Uttar Pradesh": 44677.899999999994,
+      "West Bengal": 50748.729999999996
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 54221.425671923076,
+      "Bihar": 42003.4,
+      "Chhatisgarh": 37144.07,
+      "Gujarat": 41634.63,
+      "Haryana": 45196.09,
+      "Jharkhand": 27574.08,
+      "Karnataka": 40852.39,
+      "Madhya Pradesh": 42268.58,
+      "Maharashtra": 54074.4,
+      "Punjab": 63753.63,
+      "Rajasthan": 42196.04,
+      "Telangana": 50848.880008208456,
+      "Uttar Pradesh": 45512.39,
+      "West Bengal": 50971.98
+    },
+    "CultCost": {
+      "Andhra Pradesh": 5510.54503729479,
+      "Bihar": 2333.58,
+      "Chhatisgarh": 3558.03,
+      "Gujarat": 2682.41,
+      "Haryana": 3871.94,
+      "Jharkhand": 3095.0480000000002,
+      "Karnataka": 4098.3910000000005,
+      "Madhya Pradesh": 3220.58,
+      "Maharashtra": 4461.59,
+      "Punjab": 9094.47,
+      "Rajasthan": 3457.26,
+      "Telangana": 3860.7592602437526,
+      "Uttar Pradesh": 5595.01,
+      "West Bengal": 7514.99
+    },
+    "OperCost": {
+      "Andhra Pradesh": 34608.822846153846,
+      "Bihar": 22124.35,
+      "Chhatisgarh": 25359.840000000004,
+      "Gujarat": 28714.46,
+      "Haryana": 22094.589999999997,
+      "Jharkhand": 10769.779999999999,
+      "Karnataka": 24645.34,
+      "Madhya Pradesh": 26543.600000000002,
+      "Maharashtra": 37513.670000000006,
+      "Punjab": 36785.71,
+      "Rajasthan": 27854.92,
+      "Telangana": 29266.18307859067,
+      "Uttar Pradesh": 28254.44,
+      "West Bengal": 41940.869999999995
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 19431.257423076924,
+      "Bihar": 19879.05,
+      "Chhatisgarh": 11104.2,
+      "Gujarat": 12920.17,
+      "Haryana": 23098.89,
+      "Jharkhand": 16804.3,
+      "Karnataka": 13799.14,
+      "Madhya Pradesh": 15523.990000000002,
+      "Maharashtra": 16560.730000000003,
+      "Punjab": 26967.92,
+      "Rajasthan": 13733.39,
+      "Telangana": 21582.699378367568,
+      "Uttar Pradesh": 16423.46,
+      "West Bengal": 8807.86
+    }
   },
   "Lentil": {
-    "Bihar": 29760.010000000002,
-    "Madhya Pradesh": 30743.25,
-    "Punjab": 60767.82,
-    "Rajasthan": 30691.69,
-    "Uttar Pradesh": 37944.090000000004,
-    "West Bengal": 41562.76
+    "Total Cost": {
+      "Bihar": 29760.010000000002,
+      "Madhya Pradesh": 30743.25,
+      "Punjab": 60767.82,
+      "Rajasthan": 30691.69,
+      "Uttar Pradesh": 37944.090000000004,
+      "West Bengal": 41562.76
+    },
+    "ProdCost": {
+      "Bihar": 29760.01,
+      "Madhya Pradesh": 31052.58,
+      "Punjab": 60767.82,
+      "Rajasthan": 30691.69,
+      "Uttar Pradesh": 39773.41,
+      "West Bengal": 41562.76
+    },
+    "CultCost": {
+      "Bihar": 2884.18,
+      "Madhya Pradesh": 3041.19,
+      "Punjab": 6521.427000000001,
+      "Rajasthan": 3948.2520000000004,
+      "Uttar Pradesh": 5583.8,
+      "West Bengal": 2942.1
+    },
+    "OperCost": {
+      "Bihar": 15346.470000000003,
+      "Madhya Pradesh": 19628.16,
+      "Punjab": 35825.25,
+      "Rajasthan": 19424.04,
+      "Uttar Pradesh": 22414.4,
+      "West Bengal": 27518.500000000004
+    },
+    "FixedCost": {
+      "Bihar": 14413.54,
+      "Madhya Pradesh": 11115.09,
+      "Punjab": 24942.57,
+      "Rajasthan": 11267.65,
+      "Uttar Pradesh": 15529.690000000002,
+      "West Bengal": 14044.259999999998
+    }
   },
   "R&M": {
-    "Assam": 35827.1,
-    "Bihar": 38007.280000000006,
-    "Chhattisgarh": 27235.09,
-    "Gujarat": 49086.759999999995,
-    "Haryana": 57303.84,
-    "Madhya Pradesh": 48316.36,
-    "Odisha": 19788.48,
-    "Punjab": 52198.31999999999,
-    "Rajasthan": 52711.81,
-    "Uttar Pradesh": 52327.3,
-    "West Bengal": 46141.46
+    "Total Cost": {
+      "Assam": 35827.1,
+      "Bihar": 38007.280000000006,
+      "Chhattisgarh": 27235.09,
+      "Gujarat": 49086.759999999995,
+      "Haryana": 57303.84,
+      "Madhya Pradesh": 48316.36,
+      "Odisha": 19788.48,
+      "Punjab": 52198.31999999999,
+      "Rajasthan": 52711.81,
+      "Uttar Pradesh": 52327.3,
+      "West Bengal": 46141.46
+    },
+    "ProdCost": {
+      "Assam": 35827.1,
+      "Bihar": 38007.28,
+      "Chhattisgarh": 27715.4,
+      "Gujarat": 49518.8,
+      "Haryana": 57376.23,
+      "Madhya Pradesh": 48316.36,
+      "Odisha": 19788.48,
+      "Punjab": 52198.32,
+      "Rajasthan": 52711.81,
+      "Uttar Pradesh": 52327.3,
+      "West Bengal": 46141.46
+    },
+    "CultCost": {
+      "Assam": 3840.98,
+      "Bihar": 3155.52,
+      "Chhattisgarh": 4087.94,
+      "Gujarat": 3214.95,
+      "Haryana": 2764.63,
+      "Madhya Pradesh": 2700.34,
+      "Odisha": 5236.18,
+      "Punjab": 3735.81,
+      "Rajasthan": 2697.22,
+      "Uttar Pradesh": 3337.994,
+      "West Bengal": 3699.21
+    },
+    "OperCost": {
+      "Assam": 25816.13,
+      "Bihar": 22276.300000000007,
+      "Chhattisgarh": 14167.16,
+      "Gujarat": 31251.729999999996,
+      "Haryana": 24452.100000000002,
+      "Madhya Pradesh": 24378.809999999998,
+      "Odisha": 12937.96,
+      "Punjab": 25705.37,
+      "Rajasthan": 33726.75,
+      "Uttar Pradesh": 26967.010000000002,
+      "West Bengal": 32605.45
+    },
+    "FixedCost": {
+      "Assam": 10010.97,
+      "Bihar": 15730.979999999998,
+      "Chhattisgarh": 13067.93,
+      "Gujarat": 17835.03,
+      "Haryana": 32851.74,
+      "Madhya Pradesh": 23937.55,
+      "Odisha": 6850.52,
+      "Punjab": 26492.949999999997,
+      "Rajasthan": 18985.06,
+      "Uttar Pradesh": 25360.29,
+      "West Bengal": 13536.01
+    }
   },
   "Saffflower ": {
-    "Karnataka": 41607.95,
-    "Maharashtra": 36144.810000000005
+    "Total Cost": {
+      "Karnataka": 41607.95,
+      "Maharashtra": 36144.810000000005
+    },
+    "ProdCost": {
+      "Karnataka": 41614.15,
+      "Maharashtra": 39225.38
+    },
+    "CultCost": {
+      "Karnataka": 4447.080000000001,
+      "Maharashtra": 6076.78
+    },
+    "OperCost": {
+      "Karnataka": 16718.07,
+      "Maharashtra": 28866.050000000003
+    },
+    "FixedCost": {
+      "Karnataka": 24889.88,
+      "Maharashtra": 7278.76
+    }
   },
   "Wheat": {
-    "Bihar": 49656.189999999995,
-    "Chhattisgarh": 40789.32,
-    "Gujarat": 44626.600000000006,
-    "Haryana": 72462.81,
-    "Himachal Pradesh": 47462.18,
-    "Jharkhand": 54480.08,
-    "Karnataka": 35240.2,
-    "Madhya Pradesh": 49577.95999999999,
-    "Maharashtra": 55977.340000000004,
-    "Punjab": 65692.55,
-    "Rajasthan": 69372.61,
-    "Uttar Pradesh": 62471.159999999996,
-    "Uttarakhand": 57658.87000000001,
-    "West Bengal": 47779.89
+    "Total Cost": {
+      "Bihar": 49656.189999999995,
+      "Chhattisgarh": 40789.32,
+      "Gujarat": 44626.600000000006,
+      "Haryana": 72462.81,
+      "Himachal Pradesh": 47462.18,
+      "Jharkhand": 54480.08,
+      "Karnataka": 35240.2,
+      "Madhya Pradesh": 49577.95999999999,
+      "Maharashtra": 55977.340000000004,
+      "Punjab": 65692.55,
+      "Rajasthan": 69372.61,
+      "Uttar Pradesh": 62471.159999999996,
+      "Uttarakhand": 57658.87000000001,
+      "West Bengal": 47779.89
+    },
+    "ProdCost": {
+      "Bihar": 49656.19,
+      "Chhattisgarh": 41516.44,
+      "Gujarat": 44626.6,
+      "Haryana": 73032.19,
+      "Himachal Pradesh": 47462.18,
+      "Jharkhand": 54868.36,
+      "Karnataka": 35240.2,
+      "Madhya Pradesh": 49577.96,
+      "Maharashtra": 55997.44,
+      "Punjab": 65881.36,
+      "Rajasthan": 69372.61,
+      "Uttar Pradesh": 63368.06,
+      "Uttarakhand": 58426.32,
+      "West Bengal": 48035.87
+    },
+    "CultCost": {
+      "Bihar": 1402.05,
+      "Chhattisgarh": 2367.5,
+      "Gujarat": 1494.14,
+      "Haryana": 1487.06,
+      "Himachal Pradesh": 1950.27,
+      "Jharkhand": 1984.74,
+      "Karnataka": 2457.378,
+      "Madhya Pradesh": 1220.87,
+      "Maharashtra": 2547.34,
+      "Punjab": 1290.14,
+      "Rajasthan": 1500.47,
+      "Uttar Pradesh": 1633.56,
+      "Uttarakhand": 1596.342,
+      "West Bengal": 1704.5
+    },
+    "OperCost": {
+      "Bihar": 30087.299999999996,
+      "Chhattisgarh": 23741.78,
+      "Gujarat": 30902.180000000004,
+      "Haryana": 34168.780000000006,
+      "Himachal Pradesh": 30038.19,
+      "Jharkhand": 32987.82,
+      "Karnataka": 24026.84,
+      "Madhya Pradesh": 30748.679999999997,
+      "Maharashtra": 38830.47,
+      "Punjab": 26513.440000000006,
+      "Rajasthan": 45911.72,
+      "Uttar Pradesh": 37340.25,
+      "Uttarakhand": 35866.72000000001,
+      "West Bengal": 36272.41
+    },
+    "FixedCost": {
+      "Bihar": 19568.89,
+      "Chhattisgarh": 17047.54,
+      "Gujarat": 13724.420000000002,
+      "Haryana": 38294.03,
+      "Himachal Pradesh": 17423.99,
+      "Jharkhand": 21492.260000000002,
+      "Karnataka": 11213.36,
+      "Madhya Pradesh": 18829.28,
+      "Maharashtra": 17146.870000000003,
+      "Punjab": 39179.11,
+      "Rajasthan": 23460.89,
+      "Uttar Pradesh": 25130.909999999996,
+      "Uttarakhand": 21792.149999999998,
+      "West Bengal": 11507.48
+    }
   },
   "Jute": {
-    "Assam": 78646.63,
-    "Bihar": 53347.39,
-    "West Bengal": 99319.52000000002
+    "Total Cost": {
+      "Assam": 78646.63,
+      "Bihar": 53347.39,
+      "West Bengal": 99319.52000000002
+    },
+    "ProdCost": {
+      "Assam": 78646.63,
+      "Bihar": 53718.86,
+      "West Bengal": 99319.52
+    },
+    "CultCost": {
+      "Assam": 3933.14,
+      "Bihar": 2761.65,
+      "West Bengal": 3549.96
+    },
+    "OperCost": {
+      "Assam": 61467.14,
+      "Bihar": 29470.520000000004,
+      "West Bengal": 72966.91000000002
+    },
+    "FixedCost": {
+      "Assam": 17179.49,
+      "Bihar": 23876.87,
+      "West Bengal": 26352.609999999997
+    }
   },
   "Onion": {
-    "Andhra Pradesh": 167046.99,
-    "Gujarat": 121034.22,
-    "Karnataka": 83322.56,
-    "Madhya Pradesh": 110721.79999999999,
-    "Maharashtra": 178683.15999999997,
-    "Rajasthan": 134409.57
+    "Total Cost": {
+      "Andhra Pradesh": 167046.99,
+      "Gujarat": 121034.22,
+      "Karnataka": 83322.56,
+      "Madhya Pradesh": 110721.79999999999,
+      "Maharashtra": 178683.15999999997,
+      "Rajasthan": 134409.57
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 168475.6863,
+      "Gujarat": 121034.22,
+      "Karnataka": 94308.91,
+      "Madhya Pradesh": 110721.8,
+      "Maharashtra": 179153.75,
+      "Rajasthan": 134409.57
+    },
+    "CultCost": {
+      "Andhra Pradesh": 718.1680098043015,
+      "Gujarat": 672.65,
+      "Karnataka": 1713.76,
+      "Madhya Pradesh": 450.6260000000001,
+      "Maharashtra": 768.74,
+      "Rajasthan": 786.6650000000001
+    },
+    "OperCost": {
+      "Andhra Pradesh": 142575.06999999998,
+      "Gujarat": 84689.06,
+      "Karnataka": 61347.71,
+      "Madhya Pradesh": 71647,
+      "Maharashtra": 120854.51999999999,
+      "Rajasthan": 102147.64
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 24471.920000000002,
+      "Gujarat": 36345.16,
+      "Karnataka": 21974.85,
+      "Madhya Pradesh": 39074.799999999996,
+      "Maharashtra": 57828.64,
+      "Rajasthan": 32261.929999999997
+    }
   },
   "Potato": {
-    "Assam": 105912.11,
-    "Bihar": 85284.7,
-    "Gujarat": 107631.99,
-    "Himachal Pradesh": 78622.18000000001,
-    "Karnataka": 190010.69,
-    "Madhya Pradesh": 100333.22,
-    "Pnnjab": 122171.04,
-    "Uttar Pradesh": 87333.59,
-    "West Bengal": 175276.95
+    "Total Cost": {
+      "Assam": 105912.11,
+      "Bihar": 85284.7,
+      "Gujarat": 107631.99,
+      "Himachal Pradesh": 78622.18000000001,
+      "Karnataka": 190010.69,
+      "Madhya Pradesh": 100333.22,
+      "Pnnjab": 122171.04,
+      "Uttar Pradesh": 87333.59,
+      "West Bengal": 175276.95
+    },
+    "ProdCost": {
+      "Assam": 105912.11,
+      "Bihar": 85284.7,
+      "Gujarat": 107631.99,
+      "Himachal Pradesh": 78622.18,
+      "Karnataka": 190010.69,
+      "Madhya Pradesh": 100333.22,
+      "Pnnjab": 122171.04,
+      "Uttar Pradesh": 87333.59,
+      "West Bengal": 175276.95
+    },
+    "CultCost": {
+      "Assam": 871.89,
+      "Bihar": 600.369,
+      "Gujarat": 398.84,
+      "Himachal Pradesh": 919.46,
+      "Karnataka": 695.09,
+      "Madhya Pradesh": 511.1260000000001,
+      "Pnnjab": 376.89300000000003,
+      "Uttar Pradesh": 420.53,
+      "West Bengal": 657.43
+    },
+    "OperCost": {
+      "Assam": 83912.85,
+      "Bihar": 60805.799999999996,
+      "Gujarat": 75348.24,
+      "Himachal Pradesh": 62194.340000000004,
+      "Karnataka": 127631.17000000001,
+      "Madhya Pradesh": 73854.4,
+      "Pnnjab": 79953.12,
+      "Uttar Pradesh": 60903.41,
+      "West Bengal": 117680.66
+    },
+    "FixedCost": {
+      "Assam": 21999.26,
+      "Bihar": 24478.9,
+      "Gujarat": 32283.75,
+      "Himachal Pradesh": 16427.84,
+      "Karnataka": 62379.520000000004,
+      "Madhya Pradesh": 26478.82,
+      "Pnnjab": 42217.92,
+      "Uttar Pradesh": 26430.18,
+      "West Bengal": 57596.29
+    }
   },
   "Sugarcane": {
-    "Andhra Pradesh": 203849.25,
-    "Bihar": 83227.06,
-    "Haryana": 121918.75,
-    "Karnataka": 114475.7,
-    "Maharashtra": 231706.99000000002,
-    "Punjab": 172713.78999999998,
-    "Tamil Nadu": 214852.28,
-    "Uttar Pradesh": 125636.96,
-    "Uttarakhand": 113338.76
+    "Total Cost": {
+      "Andhra Pradesh": 203849.25,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 114475.7,
+      "Maharashtra": 231706.99000000002,
+      "Punjab": 172713.78999999998,
+      "Tamil Nadu": 214852.28,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 204477.8,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 118043.19,
+      "Maharashtra": 231706.99,
+      "Punjab": 172713.79,
+      "Tamil Nadu": 218722.41,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "CultCost": {
+      "Andhra Pradesh": 264.45,
+      "Bihar": 141.88,
+      "Haryana": 154.29,
+      "Karnataka": 146.64,
+      "Maharashtra": 212.83,
+      "Punjab": 209.86,
+      "Tamil Nadu": 271.11,
+      "Uttar Pradesh": 218.96,
+      "Uttarakhand": 212.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 129881.42000000001,
+      "Bihar": 62545.829999999994,
+      "Haryana": 51234,
+      "Karnataka": 60374.17,
+      "Maharashtra": 164934.39,
+      "Punjab": 82240.12,
+      "Tamil Nadu": 144348.07,
+      "Uttar Pradesh": 73272.56,
+      "Uttarakhand": 55940.69
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 73967.82999999999,
+      "Bihar": 20681.23,
+      "Haryana": 70684.75,
+      "Karnataka": 54101.53,
+      "Maharashtra": 66772.6,
+      "Punjab": 90473.67,
+      "Tamil Nadu": 70504.20999999999,
+      "Uttar Pradesh": 52364.4,
+      "Uttarakhand": 57398.07
+    }
   },
   "Coconut AP": {
-    "Andhra Pradesh": 92710.32,
-    "Karnataka": 142936.10,
-    "Kerala": 452761.73,
-    "Tamil Nadu": 206719.30
+    "Total Cost": {
+      "Andhra Pradesh": NaN,
+      "NaN": 664.58,
+      "NaN": 92045.73999999999
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 204477.8,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 118043.19,
+      "Maharashtra": 231706.99,
+      "Punjab": 172713.79,
+      "Tamil Nadu": 218722.41,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "CultCost": {
+      "Andhra Pradesh": 264.45,
+      "Bihar": 141.88,
+      "Haryana": 154.29,
+      "Karnataka": 146.64,
+      "Maharashtra": 212.83,
+      "Punjab": 209.86,
+      "Tamil Nadu": 271.11,
+      "Uttar Pradesh": 218.96,
+      "Uttarakhand": 212.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 129881.42000000001,
+      "Bihar": 62545.829999999994,
+      "Haryana": 51234,
+      "Karnataka": 60374.17,
+      "Maharashtra": 164934.39,
+      "Punjab": 82240.12,
+      "Tamil Nadu": 144348.07,
+      "Uttar Pradesh": 73272.56,
+      "Uttarakhand": 55940.69
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 73967.82999999999,
+      "Bihar": 20681.23,
+      "Haryana": 70684.75,
+      "Karnataka": 54101.53,
+      "Maharashtra": 66772.6,
+      "Punjab": 90473.67,
+      "Tamil Nadu": 70504.20999999999,
+      "Uttar Pradesh": 52364.4,
+      "Uttarakhand": 57398.07
+    }
+  },
+  "Coconut Ka": {
+    "Total Cost": {
+      "Karnataka": 52210.729999999996,
+      "NaN": 53323.020000000004,
+      "NaN": 37402.350000000006
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 204477.8,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 118043.19,
+      "Maharashtra": 231706.99,
+      "Punjab": 172713.79,
+      "Tamil Nadu": 218722.41,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "CultCost": {
+      "Andhra Pradesh": 264.45,
+      "Bihar": 141.88,
+      "Haryana": 154.29,
+      "Karnataka": 146.64,
+      "Maharashtra": 212.83,
+      "Punjab": 209.86,
+      "Tamil Nadu": 271.11,
+      "Uttar Pradesh": 218.96,
+      "Uttarakhand": 212.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 129881.42000000001,
+      "Bihar": 62545.829999999994,
+      "Haryana": 51234,
+      "Karnataka": 60374.17,
+      "Maharashtra": 164934.39,
+      "Punjab": 82240.12,
+      "Tamil Nadu": 144348.07,
+      "Uttar Pradesh": 73272.56,
+      "Uttarakhand": 55940.69
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 73967.82999999999,
+      "Bihar": 20681.23,
+      "Haryana": 70684.75,
+      "Karnataka": 54101.53,
+      "Maharashtra": 66772.6,
+      "Punjab": 90473.67,
+      "Tamil Nadu": 70504.20999999999,
+      "Uttar Pradesh": 52364.4,
+      "Uttarakhand": 57398.07
+    }
+  },
+  "Coconut Ke": {
+    "Total Cost": {
+      "Kerala": 133606.3,
+      "NaN": 74897.06,
+      "NaN": 79004.05000000002,
+      "NaN": 165254.32
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 204477.8,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 118043.19,
+      "Maharashtra": 231706.99,
+      "Punjab": 172713.79,
+      "Tamil Nadu": 218722.41,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "CultCost": {
+      "Andhra Pradesh": 264.45,
+      "Bihar": 141.88,
+      "Haryana": 154.29,
+      "Karnataka": 146.64,
+      "Maharashtra": 212.83,
+      "Punjab": 209.86,
+      "Tamil Nadu": 271.11,
+      "Uttar Pradesh": 218.96,
+      "Uttarakhand": 212.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 129881.42000000001,
+      "Bihar": 62545.829999999994,
+      "Haryana": 51234,
+      "Karnataka": 60374.17,
+      "Maharashtra": 164934.39,
+      "Punjab": 82240.12,
+      "Tamil Nadu": 144348.07,
+      "Uttar Pradesh": 73272.56,
+      "Uttarakhand": 55940.69
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 73967.82999999999,
+      "Bihar": 20681.23,
+      "Haryana": 70684.75,
+      "Karnataka": 54101.53,
+      "Maharashtra": 66772.6,
+      "Punjab": 90473.67,
+      "Tamil Nadu": 70504.20999999999,
+      "Uttar Pradesh": 52364.4,
+      "Uttarakhand": 57398.07
+    }
+  },
+  "Coconut TN": {
+    "Total Cost": {
+      "Tamil Nadu": NaN,
+      "NaN": 56628.6,
+      "NaN": 150090.7
+    },
+    "ProdCost": {
+      "Andhra Pradesh": 204477.8,
+      "Bihar": 83227.06,
+      "Haryana": 121918.75,
+      "Karnataka": 118043.19,
+      "Maharashtra": 231706.99,
+      "Punjab": 172713.79,
+      "Tamil Nadu": 218722.41,
+      "Uttar Pradesh": 125636.96,
+      "Uttarakhand": 113338.76
+    },
+    "CultCost": {
+      "Andhra Pradesh": 264.45,
+      "Bihar": 141.88,
+      "Haryana": 154.29,
+      "Karnataka": 146.64,
+      "Maharashtra": 212.83,
+      "Punjab": 209.86,
+      "Tamil Nadu": 271.11,
+      "Uttar Pradesh": 218.96,
+      "Uttarakhand": 212.64
+    },
+    "OperCost": {
+      "Andhra Pradesh": 129881.42000000001,
+      "Bihar": 62545.829999999994,
+      "Haryana": 51234,
+      "Karnataka": 60374.17,
+      "Maharashtra": 164934.39,
+      "Punjab": 82240.12,
+      "Tamil Nadu": 144348.07,
+      "Uttar Pradesh": 73272.56,
+      "Uttarakhand": 55940.69
+    },
+    "FixedCost": {
+      "Andhra Pradesh": 73967.82999999999,
+      "Bihar": 20681.23,
+      "Haryana": 70684.75,
+      "Karnataka": 54101.53,
+      "Maharashtra": 66772.6,
+      "Punjab": 90473.67,
+      "Tamil Nadu": 70504.20999999999,
+      "Uttar Pradesh": 52364.4,
+      "Uttarakhand": 57398.07
+    }
   }
 }
