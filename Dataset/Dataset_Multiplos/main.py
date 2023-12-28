@@ -34,15 +34,12 @@ print(df_temp)
 
 df_merge = df_group.merge(df_temp, how='left', on=['State','Crop_Year'])
 
-print(df_merge)
 
 state_dummies = pd.get_dummies(df_merge['State'], prefix='State', dtype=int)
 crop_dummies = pd.get_dummies(df_merge['Crop'], prefix='Crop', dtype=int)
-year_dummies = pd.get_dummies(df_merge['Crop_Year'], prefix='Crop_Year', dtype=int)
 df_dummies = pd.concat([state_dummies, crop_dummies], axis=1)
-df_dummies = pd.concat([df_dummies, year_dummies], axis=1)
 df_dummies = pd.concat([df_dummies, df_merge], axis=1)
-df_dummies = df_dummies.drop(columns=['State', 'Crop', 'Crop_Year'])
+df_dummies = df_dummies.drop(columns=['State', 'Crop'])
 df_dummies.info()
 
 df_dummies.to_csv("Dataset_Crop_Multiple_3.csv", index=False)
