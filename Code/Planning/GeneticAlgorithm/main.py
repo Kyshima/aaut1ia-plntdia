@@ -10,12 +10,15 @@ weights = [0.1,0.2,0.3,0.4]
 year = 2019
 state='Andhra Pradesh'
 
-def initialize_population(population_size,cops):
+def initialize_population(population_size, crops):
     population = []
+    crops_list = list(crops)  # Converter o conjunto para uma lista
     for _ in range(population_size):
-        genes = [random.choice(cops) for _ in range(1,4)]
-        population.append(genes)
+        # Garantir que as culturas selecionadas sejam diferentes
+        unique_crops = random.sample(crops_list, 3)
+        population.append(unique_crops)
     return population
+
 
 def crossover(parent1, parent2):
     # Ponto de crossover (escolhido aleatoriamente)
@@ -99,7 +102,7 @@ def genetic_algorithm(population, generations, mutation_rate=0.1):
 
     # Se a população final estiver vazia, retorne um indivíduo aleatório
     if not population:
-        return initialize_population(1)[0]
+        return initialize_population(1, crops)[0]
 
     # Retornar o melhor indivíduo ou a população final
     return max(population, key=lambda ind: evaluate_fitness(ind, selected_columns))
@@ -121,8 +124,8 @@ if __name__ == "__main__":
     #print(filtered_data[['ProdCost', 'CultCost', 'OperCost', 'FixedCost']])
 
     # Uso do algoritmo genético
-    population_size = 50
-    generations = 100
+    population_size = 200
+    generations = 10000
     population = initialize_population(population_size,crops)
     best_individual = genetic_algorithm(population, generations)
 
@@ -131,4 +134,4 @@ if __name__ == "__main__":
 
     # Calcular o fitness final para o melhor indivíduo
     final_fitness = evaluate_fitness(best_individual, selected_columns)
-    print("Fitness final:", final_fitness)
+    print("Fitness/Cost:", 1/ final_fitness)
