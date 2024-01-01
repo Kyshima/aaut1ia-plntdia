@@ -19,11 +19,14 @@ def evaluate_fitness(individual, selected_columns):
     # Agrupar por ano e estado e calcular a média do Yield_Mean
     grouped_data = filtered_data.groupby(['Crop_Year', 'State']).mean().reset_index()
 
-    # Calcular a média ponderada do Yield_Mean com base nas colunas selecionadas
+    # Calcular o fitness como a média ponderada do Yield_Mean
     weighted_mean_yield = grouped_data[selected_columns].mean(axis=1)
 
-    # Calcular o fitness como a média ponderada do Yield_Mean
-    fitness = weighted_mean_yield.mean()
+    # Verificar se há valores válidos antes de calcular a média
+    if weighted_mean_yield.isnull().any():
+        fitness = float('-inf')  # Defina um valor negativo grande para indicar fitness inválido
+    else:
+        fitness = weighted_mean_yield.mean()
 
     return fitness
 
