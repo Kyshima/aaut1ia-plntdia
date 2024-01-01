@@ -3,9 +3,9 @@ import random
 import numpy as np
 
 # Definir a semente para geração de números aleatórios
-seed = 42  # Pode ser qualquer número inteiro
-random.seed(seed)
-np.random.seed(seed)
+#seed = 42  # Pode ser qualquer número inteiro
+#random.seed(seed)
+#np.random.seed(seed)
 weights = [0.1,0.2,0.3,0.4]
 year = 2019
 state='Andhra Pradesh'
@@ -45,22 +45,23 @@ def mutate(individual, mutation_rate, crops):
 def evaluate_fitness(individual, selected_columns):
     # Mapear os índices selecionados para os nomes das colunas relevantes
     selected_columns = selected_columns[2:-1]  # Excluir as colunas 'Crop_Year' e 'State'
-    selected_columns = [col for col, gene in zip(selected_columns, individual) if gene == 1]
 
     # Filtrar o dataframe com base nas colunas selecionadas
-    filtered_data = relevant_data[['Crop_Year', 'State'] + selected_columns]
+    # filtered_data = relevant_data[['Crop_Year', 'State'] + selected_columns]
 
-    # Agrupar por ano e estado e calcular a média do Yield_Mean
-    grouped_data = filtered_data.groupby(['Crop_Year', 'State']).mean().reset_index()
+    # Inicializar a soma total dos custos
+    total_cost = 0.0
 
-    # Calcular o fitness como a média ponderada do Yield_Mean
-    weighted_mean_yield = grouped_data[selected_columns].mean(axis=1)
+    # Iterar pelos genes do indivíduo
+    for gene in individual:
+        # Verificar se o gene é selecionado (1)
+        row = filtered_data.loc[filtered_data['Crop'] == gene]
+        # print(row[['ProdCost','CultCost','OperCost','FixedCost']])
+        # Calcular o custo para o gene atual e somar ao total
+        total_cost += (row['ProdCost'] * weights[0] + row['CultCost'] * weights[1] + row['OperCost'] * weights[2] + row['FixedCost'] * weights[3]).sum()
 
-    # Verificar se há valores válidos antes de calcular a média
-    if weighted_mean_yield.isnull().any():
-        fitness = float('-inf')  # Defina um valor negativo grande para indicar fitness inválido
-    else:
-        fitness = weighted_mean_yield.mean()
+    # Calcular o fitness como o inverso da soma total dos custos (minimizar custos)
+    fitness = 1.0 / (total_cost + 1) if total_cost > 0 else float('-inf')
 
     return fitness
 
@@ -109,10 +110,15 @@ if __name__ == "__main__":
     dataset = pd.read_csv(dataset_path)
 
     # Selecionar as colunas relevantes
-    selected_columns = ['Crop_Year', 'State', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
+    selected_columns = ['Crop_Year', 'State','Crop' ,'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = dataset[selected_columns]
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
+    # print(filtered_data[['Crop_Year', 'State', 'Crop']])
+    # print(crops)
+
+    #filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state) & (dataset['Crop'] == 'Groundnut')]
+    #print(filtered_data[['ProdCost', 'CultCost', 'OperCost', 'FixedCost']])
 
     # Uso do algoritmo genético
     population_size = 50
