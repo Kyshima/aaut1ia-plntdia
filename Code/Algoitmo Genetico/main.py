@@ -6,11 +6,14 @@ import numpy as np
 seed = 42  # Pode ser qualquer número inteiro
 random.seed(seed)
 np.random.seed(seed)
+weights = [0.1,0.2,0.3,0.4]
+year = 2019
+state='Andhra Pradesh'
 
-def initialize_population(population_size):
+def initialize_population(population_size,cops):
     population = []
     for _ in range(population_size):
-        genes = [random.choice([0, 1]) for _ in range(len(selected_columns) - 3)]  # 0: Não selecionado, 1: Selecionado
+        genes = [random.choice(cops) for _ in range(1,4)]
         population.append(genes)
     return population
 
@@ -23,11 +26,21 @@ def crossover(parent1, parent2):
 
     return child
 
-def mutate(individual, mutation_rate):
-    # Aplicar mutação a cada gene com uma taxa de mutação
-    mutated_individual = [gene if random.random() > mutation_rate else 1 - gene for gene in individual]
+def mutate(individual, mutation_rate, crops):
+    mutated_individual = []
+
+    for gene in individual:
+        # Check if the gene is numeric (float or int)
+        if isinstance(gene, (int, float)):
+            mutated_gene = gene if random.random() > mutation_rate else 1 - gene
+        else:
+            # If the gene is a string (crop name), randomly choose a different crop
+            mutated_gene = random.choice(crops) if random.random() < mutation_rate else gene
+
+        mutated_individual.append(mutated_gene)
 
     return mutated_individual
+
 
 def evaluate_fitness(individual, selected_columns):
     # Mapear os índices selecionados para os nomes das colunas relevantes
@@ -67,7 +80,7 @@ def genetic_algorithm(population, generations, mutation_rate=0.1):
 
         # Cruzamento (crossover)
         children = []
-        for i in range(0, len(selected_population), 2):
+        for i in range(0, len(selected_population)-1, 2):
             parent1 = selected_population[i]
             parent2 = selected_population[i + 1]
 
@@ -78,7 +91,7 @@ def genetic_algorithm(population, generations, mutation_rate=0.1):
             children.extend([child1, child2])
 
         # Mutação
-        mutated_population = [mutate(individual, mutation_rate) for individual in children]
+        mutated_population = [mutate(individual, mutation_rate, crops) for individual in children]
 
         # Substituir a população original pela nova população mutada
         population = mutated_population
@@ -98,11 +111,13 @@ if __name__ == "__main__":
     # Selecionar as colunas relevantes
     selected_columns = ['Crop_Year', 'State', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = dataset[selected_columns]
+    filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
+    crops = filtered_data['Crop'].unique()
 
     # Uso do algoritmo genético
     population_size = 50
     generations = 100
-    population = initialize_population(population_size)
+    population = initialize_population(population_size,crops)
     best_individual = genetic_algorithm(population, generations)
 
     # Exibir os resultados
