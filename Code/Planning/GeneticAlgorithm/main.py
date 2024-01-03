@@ -8,6 +8,7 @@ import numpy as np
 #np.random.seed(seed)
 weights = [0.1,0.2,0.3,0.4]
 year = 2019
+number_genes = 3
 state='Andhra Pradesh'
 
 def initialize_population(population_size, crops):
@@ -15,7 +16,7 @@ def initialize_population(population_size, crops):
     crops_list = list(crops)  # Converter o conjunto para uma lista
     for _ in range(population_size):
         # Garantir que as culturas selecionadas sejam diferentes
-        unique_crops = random.sample(crops_list, 3)
+        unique_crops = random.sample(crops_list, number_genes)
         population.append(unique_crops)
     return population
 
@@ -25,7 +26,7 @@ def crossover(parent1, parent2):
     crossover_point = random.randint(1, len(parent1) - 1)
 
     # Criar o filho combinando os genes dos pais até o ponto de crossover
-    child = parent1[:crossover_point] + parent2[crossover_point:]
+    child = parent1[:crossover_point] + [gene for gene in parent2 if gene not in parent1[:crossover_point]]
 
     return child
 
@@ -124,8 +125,8 @@ if __name__ == "__main__":
     #print(filtered_data[['ProdCost', 'CultCost', 'OperCost', 'FixedCost']])
 
     # Uso do algoritmo genético
-    population_size = 200
-    generations = 10000
+    population_size = 500
+    generations = 5000
     population = initialize_population(population_size,crops)
     best_individual = genetic_algorithm(population, generations)
 
