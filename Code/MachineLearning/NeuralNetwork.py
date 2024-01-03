@@ -6,10 +6,28 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+from tensorflow.keras import layers
+from kerastuner.tuners import RandomSearch
 
 def run_neural_network_model(path):
 
     df = pd.read_csv(path)
+
+    best_hps = {
+        'units_input': 128,
+        'activation_input': 'sigmoid',
+        'num_layers': 1,
+        'units_0': 192,
+        'activation_0': 'relu',
+        'dropout_0': 0.3,
+        'units_1': 256,
+        'activation_1': 'sigmoid',
+        'dropout_1': 0.2,
+        'learning_rate': 0.0083605,
+        'units_2': 160,
+        'activation_2': 'relu',
+        'dropout_2': 0.2
+    }
 
     # Step 1: Extract features (X) and target variable (y)
     X = df.drop('Production_Total', axis=1)
@@ -26,15 +44,20 @@ def run_neural_network_model(path):
 
     # Step 4: Build the neural network model
     model = Sequential()
-    model.add(Dense(64, activation='relu', input_shape=(X_train.shape[1],)))
-    model.add(Dense(32, activation='relu'))
+    model.add(Dense(best_hps['units_input'], activation=best_hps['activation_input'], input_shape=(X_train.shape[1],)))
+
+    for i in range(best_hps['num_layers']):
+        model.add(Dense(best_hps[f'units_{i}'], activation=best_hps[f'activation_{i}']))
+        model.add(layers.Dropout(best_hps[f'dropout_{i}']))
+
     model.add(Dense(1, activation='linear'))  # Linear activation for regression
 
     # Step 5: Compile the model
-    model.compile(optimizer='adam', loss='mean_squared_error')
+    optimizer = tf.keras.optimizers.Adam(learning_rate=best_hps['learning_rate'])
+    model.compile(optimizer=optimizer, loss='mean_squared_error')
 
     # Step 6: Train the model
-    model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2, verbose=1)
+    model.fit(X_train, y_train, epochs=100)
 
     # Step 7: Evaluate the model
     y_pred = model.predict(X_test)

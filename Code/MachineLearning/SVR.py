@@ -1,23 +1,24 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import matplotlib.pyplot as plt
 
-def run_decision_tree_model(path):
+def run_svr_model(path):
 
     df = pd.read_csv(path)
 
     # Step 1: Extract features (X) and target variable (y)
     X = df.drop('Production_Total', axis=1)
-    X = X.drop('Yield_Mean', axis=1)  # Replace 'target_variable_column_name' with your actual target variable column name
+    X = X.drop('Yield_Mean', axis=1)
+    X = X.drop('Crop_Year', axis=1)
     y = df['Yield_Mean']
 
     # Step 2: Split the data into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-    # Step 3: Create a Decision Tree model
-    model = DecisionTreeRegressor(random_state=123)
+    # Step 3: Create a Support Vector Machine model
+    model = SVR()
 
     # Step 4: Fit the model to the training data
     model.fit(X_train, y_train)
@@ -42,3 +43,4 @@ def run_decision_tree_model(path):
     plt.show()
 
     df.info()
+

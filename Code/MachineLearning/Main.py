@@ -1,13 +1,15 @@
 def main():
 
-    path_singular = 'C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Dataset/DataSet-Analysis/Dataset_Crop_Singular_3_anos.csv'
-    path_multiple = 'C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Dataset/DataSet-Analysis/Dataset_Crop_Multiple_3.csv'
+    path_singular = 'C:/Users/didi2/Documents/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Singular_3_anos.csv'
+    path_multiple = 'C:/Users/didi2/Documents/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Multiple_3.csv'
     path = 0
 
     print("Choose a model:")
     print("1. Linear Regression")
     print("2. Neural Network")
-    print("3. Decision Tree")
+    print("3. Random Forest")
+    print("4. SVR")
+
 
     choice = input("Enter the number of the model you want to run: ")
 
@@ -35,11 +37,15 @@ def main():
         run_neural_network_model(path)
 
     elif choice == "3":
-        from DecisionTree import run_decision_tree_model
-        run_decision_tree_model(path)
+        from RandomForest import run_random_forest_model
+        run_random_forest_model(path)
+    
+    elif choice == "4":
+        from SVR import run_svr_model
+        run_svr_model(path)
         
     else:
-        print("Invalid choice. Please enter a number between 1 and 3.")
+        print("Invalid choice. Please enter a number between 1 and 4.")
 
 if __name__ == "__main__":
     main()

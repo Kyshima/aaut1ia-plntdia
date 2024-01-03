@@ -11,6 +11,7 @@ def run_linear_regression_model(path):
     # Step 1: Extract features (X) and target variable (y)
     X = df.drop('Production_Total', axis=1)
     X = X.drop('Yield_Mean', axis=1)  # Replace 'target_variable_column_name' with your actual target variable column name
+    X = X.drop('Crop_Year', axis=1)
     y = df['Yield_Mean']
 
     # Step 2: Split the data into training and testing sets
