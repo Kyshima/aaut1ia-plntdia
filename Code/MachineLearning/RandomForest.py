@@ -1,12 +1,14 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import matplotlib.pyplot as plt
 
 def run_random_forest_model(path):
 
     df = pd.read_csv(path)
+    #N_Jobs = -1
 
     # Step 1: Extract features (X) and target variable (y)
     X = df.drop('Production_Total', axis=1)
@@ -19,17 +21,19 @@ def run_random_forest_model(path):
 
     # Step 3: Define the hyperparameter grid for GridSearchCV
     param_grid = {
-        'n_estimators': [50, 100, 200],
-        'max_depth': [None, 10, 20],
+        'n_estimators': [100],
+        'max_depth': [None, 8, 16 , 32],
         'min_samples_split': [2, 5, 10],
         'min_samples_leaf': [1, 2, 4]
     }
 
     # Step 4: Create a RandomForestRegressor
-    model = RandomForestRegressor(random_state=123)
+    model = RandomForestRegressor(random_state = 123)
+
+    cvk = KFold(n_splits = 5, random_state = 42, shuffle = True)
 
     # Step 5: Create GridSearchCV object
-    grid_search = GridSearchCV(model, param_grid, scoring='neg_mean_squared_error', cv=5)
+    grid_search = GridSearchCV(model, param_grid, scoring='neg_mean_squared_error', cv = cvk, verbose = 1)
 
     # Step 6: Fit the model to the training data with hyperparameter tuning
     grid_search.fit(X_train, y_train)
@@ -50,7 +54,7 @@ def run_random_forest_model(path):
     print(f'Mean Absolute Error: {mae}')
     print(f'R-squared: {r2}')
 
-    # Step 10: Visualize the results (optional)
+    # Step 10: Visualize the results
     plt.scatter(y_test, y_pred)
     plt.xlabel('Actual values')
     plt.ylabel('Predicted values')

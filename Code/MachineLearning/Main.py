@@ -10,7 +10,6 @@ def main():
     print("3. Random Forest")
     print("4. SVR")
 
-
     choice = input("Enter the number of the model you want to run: ")
 
     print("Choose a path:")
