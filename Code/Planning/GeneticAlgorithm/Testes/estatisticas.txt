@@ -1,0 +1,13 @@
+Percentagem de uso:
+Sunflower: 98.00%
+Sesamum: 98.00%
+Moong(Green Gram): 72.00%
+Jowar: 24.00%
+Urad: 8.00%
+
+Calculo da media de custo:
+Moong(Green Gram): Media de 39478.62
+Sesamum: Media de 40026.27
+Sunflower: Media de 40026.27
+Jowar: Media de 40896.09
+Urad: Media de 43956.46
