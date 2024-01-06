@@ -8,9 +8,10 @@ year = 2019
 number_genes = 3
 state = 'Andhra Pradesh'
 population_size = 500
-max_generations_without_improvement = 100
+max_generations_without_improvement = 10
 current_generations_without_improvement = 0
-
+temporal = True
+max_time = 4  #(segundos)
 
 def initialize_population(population_size, crops):
     population = []
@@ -111,6 +112,7 @@ def genetic_algorithm(population, mutation_rate=0.1):
 
     return max(population, key=lambda ind: evaluate_fitness(ind, selected_columns)), best_fitness
 
+
 if __name__ == "__main__":
     # Carregar o dataset
     dataset_path = "Dataset_Planning.csv"
@@ -119,16 +121,28 @@ if __name__ == "__main__":
     start_time = time.time()
 
     # Selecionar as colunas relevantes
-    selected_columns = ['Crop_Year', 'State','Crop' ,'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
+    selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost',
+                        'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = dataset[selected_columns]
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
 
     # Uso do algoritmo genético
     population = initialize_population(population_size, crops)
-    best_individual, final_fitness = genetic_algorithm(population)
 
-    elapsed_time = time.time() - start_time
+    while True:
+
+        if temporal and (time.time() - start_time) >= max_time:
+            break
+        elif current_generations_without_improvement >= max_generations_without_improvement:
+            break
+
+        best_individual, final_fitness = genetic_algorithm(population)
+
+        elapsed_time = time.time() - start_time
+        if temporal:
+            if elapsed_time >= max_time:
+                break
 
     # Exibir os resultados
     print("Melhor indivíduo:", best_individual)
