@@ -1,14 +1,16 @@
 def main():
 
-    path_singular = 'C:/Users/didi2/Documents/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Singular_3_anos.csv'
-    path_multiple = 'C:/Users/didi2/Documents/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Multiple_3.csv'
+    path_singular = 'C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Singular_3_anos.csv'
+    path_multiple = 'C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/MachineLearning/Dataset_Crop_Multiple_3.csv'
     path = 0
 
     print("Choose a model:")
     print("1. Linear Regression")
     print("2. Neural Network")
     print("3. Random Forest")
-    print("4. SVR")
+    print("4. XBG")
+    print("5. LightGBM")
+    print("6. Polynomial Regression")
 
     choice = input("Enter the number of the model you want to run: ")
 
@@ -40,11 +42,19 @@ def main():
         run_random_forest_model(path)
     
     elif choice == "4":
-        from SVR import run_svr_model
-        run_svr_model(path)
+        from XGB import run_XGB_model
+        run_XGB_model(path)
+
+    elif choice == "5":
+        from LightGBM import run_lightgbm_model
+        run_lightgbm_model(path)
+
+    elif choice == "6":
+        from PolynomialRegression import run_polynomial_regression_model
+        run_polynomial_regression_model(path)
         
     else:
-        print("Invalid choice. Please enter a number between 1 and 4.")
+        print("Invalid choice. Please enter a number between 1 and 6.")
 
 if __name__ == "__main__":
     main()

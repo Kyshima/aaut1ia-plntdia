@@ -8,20 +8,19 @@ import matplotlib.pyplot as plt
 def run_random_forest_model(path):
 
     df = pd.read_csv(path)
-    #N_Jobs = -1
 
     # Step 1: Extract features (X) and target variable (y)
-    X = df.drop('Production_Total', axis=1)
-    X = X.drop('Yield_Mean', axis=1)
-    X = X.drop('Crop_Year', axis=1)
+    X = df.drop('Production_Total', axis = 1)
+    X = X.drop('Yield_Mean', axis = 1)
+    X = X.drop('Crop_Year', axis = 1)
     y = df['Yield_Mean']
 
     # Step 2: Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42)
 
     # Step 3: Define the hyperparameter grid for GridSearchCV
     param_grid = {
-        'n_estimators': [100],
+        'n_estimators': [100, 150, 200, 250, 300, 350, 400],
         'max_depth': [None, 8, 16 , 32],
         'min_samples_split': [2, 5, 10],
         'min_samples_leaf': [1, 2, 4]
@@ -33,7 +32,7 @@ def run_random_forest_model(path):
     cvk = KFold(n_splits = 5, random_state = 42, shuffle = True)
 
     # Step 5: Create GridSearchCV object
-    grid_search = GridSearchCV(model, param_grid, scoring='neg_mean_squared_error', cv = cvk, verbose = 1)
+    grid_search = GridSearchCV(model, param_grid, scoring = 'neg_mean_squared_error', cv = cvk, verbose = 2, n_jobs = -1)
 
     # Step 6: Fit the model to the training data with hyperparameter tuning
     grid_search.fit(X_train, y_train)
