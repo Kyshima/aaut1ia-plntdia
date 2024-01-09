@@ -1,6 +1,7 @@
 import pandas as pd
 import random
 import time
+from collections import Counter
 
 # Definir variáveis globais
 weights = [0.1, 0.2, 0.3, 0.4]
@@ -8,10 +9,9 @@ year = 2019
 number_genes = 3
 state = 'Andhra Pradesh'
 population_size = 500
-max_generations_without_improvement = 10
+max_generations_without_improvement = 20
 current_generations_without_improvement = 0
-temporal = True
-max_time = 4  #(segundos)
+
 
 def initialize_population(population_size, crops):
     population = []
@@ -115,10 +115,8 @@ def genetic_algorithm(population, mutation_rate=0.1):
 
 if __name__ == "__main__":
     # Carregar o dataset
-    dataset_path = "Dataset_Planning.csv"
+    dataset_path = "../Dataset_Planning.csv"
     dataset = pd.read_csv(dataset_path)
-
-    start_time = time.time()
 
     # Selecionar as colunas relevantes
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost',
@@ -127,24 +125,79 @@ if __name__ == "__main__":
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
 
-    # Uso do algoritmo genético
-    population = initialize_population(population_size, crops)
+    # Abrir o arquivo para escrita
+    with open("output.txt", "w") as file:
+        # Loop para executar X vezes
+        for i in range(50):
+            # Registrar o tempo de início
+            start_time = time.time()
 
-    while True:
+            population = initialize_population(population_size, crops)
+            best_individual, final_fitness = genetic_algorithm(population)
 
-        if temporal and (time.time() - start_time) >= max_time:
-            break
-        elif current_generations_without_improvement >= max_generations_without_improvement:
-            break
+            # Calcular o tempo decorrido
+            elapsed_time = time.time() - start_time
 
-        best_individual, final_fitness = genetic_algorithm(population)
+            # Exibir os resultados na consola
+            print(f"\nExecução {i + 1}:")
+            print("Melhor indivíduo:", best_individual)
+            print("Fitness/Cost:", 1 / final_fitness)
+            print("Tempo decorrido: {:.2f} segundos".format(elapsed_time))
 
-        elapsed_time = time.time() - start_time
-        if temporal:
-            if elapsed_time >= max_time:
-                break
+            # Gravar os resultados no arquivo
+            print(f"\nExecucao {i + 1}:", file=file)
+            print("Melhor individuo:", best_individual, file=file)
+            print("Fitness/Cost:", 1 / final_fitness, file=file)
 
-    # Exibir os resultados
-    print("Melhor indivíduo:", best_individual)
-    print("Fitness/Cost:", 1 / final_fitness)
-    print("Tempo decorrido: {:.2f} segundos".format(elapsed_time))
+    # Fechar o arquivo após o loop principal
+    file.close()
+
+    # Cálculos de estatísticas adicionados após o loop principal
+    with open("estatisticas.txt", "a") as estatisticas_file:
+        print("----------------------------------------------------------------", file=estatisticas_file)
+        # Calcular a percentagem de uso de cada cultura
+        total_execucoes = 50  # Defina o número total de execuções
+        cultura_counts = Counter()
+
+        for i in range(total_execucoes):
+            population = initialize_population(population_size, crops)
+            best_individual, final_fitness = genetic_algorithm(population)
+            print(f"{i}")
+
+            for cultura in best_individual:
+                cultura_counts[cultura] += 1
+
+        print("\nPercentagem de uso:")
+        print("\nPercentagem de uso:", file=estatisticas_file)
+        total_culturas = len(cultura_counts)
+
+        for cultura, count in cultura_counts.most_common():
+            percentagem = (count / total_execucoes) * 100
+            print(f"{cultura}: {percentagem:.2f}%")
+            print(f"{cultura}: {percentagem:.2f}%", file=estatisticas_file)
+
+        # Calcular a média de custo para cada cultura
+        custos_culturas = {}
+
+        for i in range(total_execucoes):
+            print(f"{i}")
+            population = initialize_population(population_size, crops)
+            best_individual, final_fitness = genetic_algorithm(population)
+
+            for cultura in best_individual:
+                if cultura not in custos_culturas:
+                    custos_culturas[cultura] = []
+
+                custo = 1 / final_fitness
+                custos_culturas[cultura].append(custo)
+
+        print("\nCalculo da media de custo:")
+        print("\nCalculo da media de custo:", file=estatisticas_file)
+
+        # Ordenar as culturas com base na média de custo
+        culturas_ordenadas = sorted(custos_culturas.items(), key=lambda x: sum(x[1]) / len(x[1]))
+
+        for cultura, custos in culturas_ordenadas:
+            media_custo = sum(custos) / len(custos)
+            print(f"{cultura}: Média de {media_custo:.2f}")
+            print(f"{cultura}: Media de {media_custo:.2f}", file=estatisticas_file)
