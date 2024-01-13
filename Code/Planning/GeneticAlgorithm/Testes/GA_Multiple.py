@@ -8,11 +8,12 @@ weights = [0.1, 0.2, 0.3, 0.4]
 year = 2019
 number_genes = 3
 state = 'Andhra Pradesh'
-population_size = 200
-max_generations_without_improvement = 10
+population_size = 100
+max_generations_without_improvement = 20
 current_generations_without_improvement = 0
 temporal = False
 max_time = 4  #(segundos)
+prev_fitness = 0
 
 def initialize_population(population_size, crops):
     population = []
@@ -71,47 +72,40 @@ def evaluate_fitness(individual, selected_columns):
 def genetic_algorithm(population, mutation_rate=0.1):
     global current_generations_without_improvement
 
-    for _ in range(max_generations_without_improvement):
-        fitness_scores = [evaluate_fitness(individual, selected_columns) for individual in population]
 
-        selected_indices = sorted(range(len(fitness_scores)), key=lambda k: fitness_scores[k], reverse=True)[
-                           :int(len(population) * 0.2)]
+    fitness_scores = [evaluate_fitness(individual, selected_columns) for individual in population]
 
-        if len(selected_indices) % 2 != 0:
-            selected_indices.pop()
+    selected_indices = sorted(range(len(fitness_scores)), key=lambda k: fitness_scores[k], reverse=True)[
+                       :int(len(population) * 0.2)]
 
-        selected_population = [population[i] for i in selected_indices]
+    if len(selected_indices) % 2 != 0:
+        selected_indices.pop()
 
-        if not selected_population:
-            continue
+    selected_population = [population[i] for i in selected_indices]
 
-        children = []
-        for i in range(0, len(selected_population) - 1, 2):
-            parent1 = selected_population[i]
-            parent2 = selected_population[i + 1]
-            child1 = crossover(parent1, parent2)
-            child2 = crossover(parent2, parent1)
-            children.extend([child1, child2])
 
-        mutated_population = [mutate(individual, mutation_rate, crops) for individual in children]
+    children = []
+    for i in range(0, len(selected_population) - 1, 2):
+        parent1 = selected_population[i]
+        parent2 = selected_population[i + 1]
+        child1 = crossover(parent1, parent2)
+        child2 = crossover(parent2, parent1)
+        children.extend([child1, child2])
 
-        best_individual = max(mutated_population, key=lambda ind: evaluate_fitness(ind, selected_columns))
-        best_fitness = evaluate_fitness(best_individual, selected_columns)
+    mutated_population = [mutate(individual, mutation_rate, crops) for individual in children]
 
-        if best_fitness > 1 / best_fitness:
-            current_generations_without_improvement = 0
-        else:
-            current_generations_without_improvement += 1
+    mutated_population = population + mutated_population
+    population = sorted(mutated_population, key=lambda ind: evaluate_fitness(ind, selected_columns), reverse=True)[:population_size]
 
-        population = mutated_population
+    best_individual = population[0]
+    best_fitness = evaluate_fitness(best_individual, selected_columns)
 
-        if current_generations_without_improvement == max_generations_without_improvement:
-            break
+    if best_fitness > prev_fitness:
+        current_generations_without_improvement = 0
+    else:
+        current_generations_without_improvement += 1
 
-    if not population:
-        return initialize_population(1, crops)[0], 0
-
-    return max(population, key=lambda ind: evaluate_fitness(ind, selected_columns)), best_fitness
+    return population, best_individual, best_fitness
 
 
 if __name__ == "__main__":
@@ -138,19 +132,20 @@ if __name__ == "__main__":
             # Registrar o tempo de início
             start_time = time.time()
 
+            # Uso do algoritmo genético
             population = initialize_population(population_size, crops)
-
+            prev_fitness = evaluate_fitness(population[0], selected_columns)
             while True:
+
                 if temporal and (time.time() - start_time) >= max_time:
                     break
                 elif current_generations_without_improvement >= max_generations_without_improvement:
                     break
 
-                best_individual, final_fitness = genetic_algorithm(population)
+                population, best_individual, final_fitness = genetic_algorithm(population)
 
                 elapsed_time = time.time() - start_time
-                if temporal and elapsed_time >= max_time:
-                    break
+                prev_fitness = final_fitness
 
             # Exibir os resultados na consola
             print(f"\nExecução {i + 1}:")
@@ -175,7 +170,7 @@ if __name__ == "__main__":
 
     for i in range(total_execucoes):
         population = initialize_population(population_size, crops)
-        best_individual, final_fitness = genetic_algorithm(population)
+        population, best_individual, final_fitness = genetic_algorithm(population)
         print(f"{i}")
 
         for cultura in best_individual:
@@ -202,7 +197,7 @@ if __name__ == "__main__":
         for i in range(total_execucoes):
             print(f"{i}")
             population = initialize_population(population_size, crops)
-            best_individual, final_fitness = genetic_algorithm(population)
+            population, best_individual, final_fitness = genetic_algorithm(population)
 
             for cultura in best_individual:
                 if cultura not in custos_culturas:

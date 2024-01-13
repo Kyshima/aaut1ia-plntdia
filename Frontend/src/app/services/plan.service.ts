@@ -1,15 +1,14 @@
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-import {Food} from '../packages/food/food';
-import  {Plan} from '../crops/plan/plan';
+import { Plan } from '../crops/plan/plan';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlanService {
 
-  public postUrl = 'http://localhost:8080/api';
+  public postUrl = 'http://localhost:5000/plan';
 
   httpOptions = {
     headers: new HttpHeaders({

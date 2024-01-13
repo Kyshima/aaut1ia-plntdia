@@ -145,23 +145,21 @@
       </div>
       
     </div>
-    <div id="response_div" class="response-div" *ngIf="responseData">
-      <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
-      <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
+  </div>  
+  <div id="response_div" class="response-div" *ngIf="responseData">
+    <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
+    <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
 
-          <div class="response" *ngIf="responseData.conclusion.length == 0">No Results provided with the given Product information.</div>
+        <div class="response" *ngIf="responseData.length == 0">No results provided with the given information</div>
 
-          <div class="response">
+        <div class="response">
 
-            <div class="answer-div">
-              {{responseData}}
-            </div>
-
-            <!-- {{ i + 1 }} -->
+          <div class="answer-div">
+            Yield: {{responseData.Yield}}
           </div>
-      </div>
+        </div>
     </div>
-  </div>    
+  </div>  
 </div>  
 </body>
 

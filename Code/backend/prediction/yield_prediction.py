@@ -2,7 +2,7 @@ import pandas as pd
 import joblib
 
 #model = loaded_rf = joblib.load("best_random_forest_model.joblib")
-model = loaded_rf = joblib.load('C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backendfunction/best_random_forest_model.joblib')
+model = loaded_rf = joblib.load('C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backend/prediction/best_random_forest_model.joblib')
 
 def predict(State, Crop, Area, prodAnt1, areaAnt1, prodAnt2, areaAnt2, prodAnt3, areaAnt3):
     columns = [

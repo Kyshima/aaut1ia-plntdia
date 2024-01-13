@@ -1,7 +1,5 @@
 import {Component, OnInit, OnDestroy  } from '@angular/core';
 import { Router } from '@angular/router';
-import {Packages} from "./crops";
-import {PackagesService} from "../services/packages.service";
 
 @Component({
   selector: 'app-health',
@@ -11,16 +9,14 @@ import {PackagesService} from "../services/packages.service";
 
 export class CropsComponent implements OnInit, OnDestroy  {
 
-  constructor(private packagesService: PackagesService, private router: Router) {
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
-    // This function will run when the component is initialized
     
   }
 
   ngOnDestroy(): void {
-    // This function will run when the component is about to be destroyed
     
   }
 
@@ -32,7 +28,4 @@ export class CropsComponent implements OnInit, OnDestroy  {
     this.router.navigate(['/crops/predict']);
   }
   
-
-
-
 }

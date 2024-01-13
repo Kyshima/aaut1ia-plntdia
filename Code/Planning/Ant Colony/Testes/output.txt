@@ -1,250 +1,250 @@
 
 Execucao 1:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.35 segundos
-
-Execucao 2:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.32 segundos
-
-Execucao 3:
 Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.29 segundos
+Tempo decorrido: 2.68 segundos
+
+Execucao 2:
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.62 segundos
+
+Execucao 3:
+Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.62 segundos
 
 Execucao 4:
-Melhor Solucao: ['Sesamum', 'Jowar', 'Sunflower']
-Melhor Score/Menor Custo: 40895.08514936474
-Tempo decorrido: 1.33 segundos
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.57 segundos
 
 Execucao 5:
 Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.31 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 6:
-Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.60 segundos
 
 Execucao 7:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.56 segundos
 
 Execucao 8:
 Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.33 segundos
+Tempo decorrido: 2.61 segundos
 
 Execucao 9:
-Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.29 segundos
+Tempo decorrido: 2.63 segundos
 
 Execucao 10:
-Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.35 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 11:
-Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.31 segundos
-
-Execucao 12:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.32 segundos
-
-Execucao 13:
 Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.30 segundos
+Tempo decorrido: 2.67 segundos
 
-Execucao 14:
-Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Execucao 12:
+Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.30 segundos
+Tempo decorrido: 2.58 segundos
 
-Execucao 15:
+Execucao 13:
 Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.31 segundos
+Tempo decorrido: 2.59 segundos
+
+Execucao 14:
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.59 segundos
+
+Execucao 15:
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.57 segundos
 
 Execucao 16:
 Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.60 segundos
 
 Execucao 17:
-Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 18:
 Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.74 segundos
 
 Execucao 19:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.67 segundos
 
 Execucao 20:
-Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 21:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.26 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 22:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.59 segundos
 
 Execucao 23:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.58 segundos
 
 Execucao 24:
-Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 25:
-Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.59 segundos
 
 Execucao 26:
 Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.26 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 27:
-Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.27 segundos
+Tempo decorrido: 2.58 segundos
 
 Execucao 28:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.58 segundos
 
 Execucao 29:
 Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.59 segundos
 
 Execucao 30:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.58 segundos
 
 Execucao 31:
 Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.58 segundos
 
 Execucao 32:
-Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.60 segundos
 
 Execucao 33:
-Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.60 segundos
 
 Execucao 34:
-Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.70 segundos
 
 Execucao 35:
 Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.69 segundos
 
 Execucao 36:
-Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
-
-Execucao 37:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
-
-Execucao 38:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.26 segundos
-
-Execucao 39:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Jowar']
-Melhor Score/Menor Custo: 40895.08514936474
-Tempo decorrido: 1.26 segundos
-
-Execucao 40:
-Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
-
-Execucao 41:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
-
-Execucao 42:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
-
-Execucao 43:
 Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.69 segundos
 
-Execucao 44:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.26 segundos
-
-Execucao 45:
+Execucao 37:
 Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.84 segundos
+
+Execucao 38:
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.82 segundos
+
+Execucao 39:
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.67 segundos
+
+Execucao 40:
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.63 segundos
+
+Execucao 41:
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.59 segundos
+
+Execucao 42:
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.66 segundos
+
+Execucao 43:
+Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.66 segundos
+
+Execucao 44:
+Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.58 segundos
+
+Execucao 45:
+Melhor Solucao: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.57 segundos
 
 Execucao 46:
-Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Melhor Solucao: ['Sesamum', 'Moong(Green Gram)', 'Sunflower']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.23 segundos
+Tempo decorrido: 2.62 segundos
 
 Execucao 47:
-Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
-
-Execucao 48:
 Melhor Solucao: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.24 segundos
+Tempo decorrido: 2.60 segundos
+
+Execucao 48:
+Melhor Solucao: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.57 segundos
 
 Execucao 49:
-Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
-Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
-
-Execucao 50:
 Melhor Solucao: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
 Melhor Score/Menor Custo: 39477.619392304696
-Tempo decorrido: 1.25 segundos
+Tempo decorrido: 2.58 segundos
+
+Execucao 50:
+Melhor Solucao: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Melhor Score/Menor Custo: 39477.619392304696
+Tempo decorrido: 2.59 segundos
