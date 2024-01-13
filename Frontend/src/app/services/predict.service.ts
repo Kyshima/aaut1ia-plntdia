@@ -8,7 +8,7 @@ import { Predict } from '../crops/predict/predict';
 })
 export class PredictService {
 
-  public postUrl = 'http://localhost:8080/api';
+  public postUrl = 'http://localhost:5000/predict';
 
   httpOptions = {
     headers: new HttpHeaders({
