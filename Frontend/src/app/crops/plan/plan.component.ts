@@ -26,6 +26,8 @@ export class PlanComponent implements OnInit, OnDestroy  {
   fixedCostAG: number = 0;
   numResultsAG: number = 0;
 
+  canSubmitCostACO: boolean = false;
+  canSubmitCostAG: boolean = false;
 
   ngOnInit(): void {
     // This function will run when the component is initialized
@@ -44,6 +46,20 @@ export class PlanComponent implements OnInit, OnDestroy  {
 
   isSubmitButtonEnabledAG() {
     return this.stateInputAG !="" && this.prodCostAG != 0 && this.cultCostAG != 0 && this.operCostAG != 0 && this.fixedCostAG != 0 && this.numResultsAG != 0;
+  }
+
+  onCostACOChange() {
+    if((this.prodCostACO + this.cultCostACO + this.operCostACO + this.fixedCostACO) > 1) {
+      this.canSubmitCostACO = false;
+      alert("The sum of the cost percentages can't be bigger than 1!");
+    }else this.canSubmitCostACO = true;
+  }
+
+  onCostAGChange() {
+    if((this.prodCostAG + this.cultCostAG + this.operCostAG + this.fixedCostAG) > 1) {
+      this.canSubmitCostAG = false;
+      alert("The sum of the cost percentages can't be bigger than 1!");
+    }else this.canSubmitCostAG = true;
   }
 
   submitFormAG() {
