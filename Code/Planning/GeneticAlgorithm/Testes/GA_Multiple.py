@@ -8,10 +8,11 @@ weights = [0.1, 0.2, 0.3, 0.4]
 year = 2019
 number_genes = 3
 state = 'Andhra Pradesh'
-population_size = 500
-max_generations_without_improvement = 20
+population_size = 200
+max_generations_without_improvement = 10
 current_generations_without_improvement = 0
-
+temporal = False
+max_time = 4  #(segundos)
 
 def initialize_population(population_size, crops):
     population = []
@@ -125,18 +126,31 @@ if __name__ == "__main__":
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
 
+    melhor_tempo = []
+
     # Abrir o arquivo para escrita
     with open("output.txt", "w") as file:
         # Loop para executar X vezes
         for i in range(50):
+            # Reiniciar a contagem de gerações sem melhoria a cada iteração
+            current_generations_without_improvement = 0
+
             # Registrar o tempo de início
             start_time = time.time()
 
             population = initialize_population(population_size, crops)
-            best_individual, final_fitness = genetic_algorithm(population)
 
-            # Calcular o tempo decorrido
-            elapsed_time = time.time() - start_time
+            while True:
+                if temporal and (time.time() - start_time) >= max_time:
+                    break
+                elif current_generations_without_improvement >= max_generations_without_improvement:
+                    break
+
+                best_individual, final_fitness = genetic_algorithm(population)
+
+                elapsed_time = time.time() - start_time
+                if temporal and elapsed_time >= max_time:
+                    break
 
             # Exibir os resultados na consola
             print(f"\nExecução {i + 1}:")
@@ -149,23 +163,29 @@ if __name__ == "__main__":
             print("Melhor individuo:", best_individual, file=file)
             print("Fitness/Cost:", 1 / final_fitness, file=file)
 
+            melhor_tempo.append([])
+            melhor_tempo[i].append(elapsed_time)
+
     # Fechar o arquivo após o loop principal
     file.close()
+
+    # Calcular a percentagem de uso de cada cultura
+    total_execucoes = 50  # Defina o número total de execuções
+    cultura_counts = Counter()
+
+    for i in range(total_execucoes):
+        population = initialize_population(population_size, crops)
+        best_individual, final_fitness = genetic_algorithm(population)
+        print(f"{i}")
+
+        for cultura in best_individual:
+            cultura_counts[cultura] += 1
 
     # Cálculos de estatísticas adicionados após o loop principal
     with open("estatisticas.txt", "a") as estatisticas_file:
         print("----------------------------------------------------------------", file=estatisticas_file)
-        # Calcular a percentagem de uso de cada cultura
-        total_execucoes = 50  # Defina o número total de execuções
-        cultura_counts = Counter()
-
-        for i in range(total_execucoes):
-            population = initialize_population(population_size, crops)
-            best_individual, final_fitness = genetic_algorithm(population)
-            print(f"{i}")
-
-            for cultura in best_individual:
-                cultura_counts[cultura] += 1
+        average_execution_time = sum(sum(run) for run in melhor_tempo) / total_execucoes
+        print(f"Media de Tempo de Execucao: {average_execution_time:.2f} segundos, usando {population_size} individuos, e {max_generations_without_improvement} maximo de iteracoes:", file=estatisticas_file)
 
         print("\nPercentagem de uso:")
         print("\nPercentagem de uso:", file=estatisticas_file)
