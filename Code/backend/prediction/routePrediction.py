@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from yield_prediction import predict
+from Code.backend.prediction.yield_prediction import predict
 from flask_cors import CORS
 
 app = Flask(__name__)

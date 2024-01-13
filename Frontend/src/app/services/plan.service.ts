@@ -1,14 +1,14 @@
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
+import { Plan } from '../crops/plan/plan';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlanService {
 
-  public javaUrl = 'http://localhost:8080/api';
-  public prologUrl = 'http://localhost:5026/';
+  public postUrl = 'http://localhost:5000/plan';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -18,6 +18,10 @@ export class PlanService {
   };
 
   constructor(private http: HttpClient) {
+  }
+
+  postPlan(plan: Plan):  Observable<String> {
+    return this.http.post<String>(this.postUrl, plan, this.httpOptions);
   }
 
 }
