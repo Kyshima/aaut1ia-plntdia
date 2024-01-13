@@ -1,5 +1,6 @@
 import {Component, OnInit, OnDestroy  } from '@angular/core';
 import {Predict} from "./predict";
+import { PredictService } from 'src/app/services/predict.service';
 
 @Component({
   selector: 'app-predict',
@@ -8,18 +9,20 @@ import {Predict} from "./predict";
 })
 export class PredictComponent implements OnInit, OnDestroy  {
 
-  constructor() {
+  constructor(private predictService: PredictService) {
   }
 
-  select1: string="";
-  select2: string="";
-  input1: number = 0;
-  input2: number = 0;
-  input3: number = 0;
-  input4: number = 0;
-  input5: number = 0;
-  input6: number = 0;
-  input7: number = 0;
+  responseData: any = '';
+
+  selectState: string="";
+  selectCrop: string="";
+  pa1: number = 0;
+  pa2: number = 0;
+  pa3: number = 0;
+  pa4: number = 0;
+  prod1: number = 0;
+  prod2: number = 0;
+  prod3: number = 0;
 
   ngOnInit(): void {
     // This function will run when the component is initialized
@@ -31,7 +34,19 @@ export class PredictComponent implements OnInit, OnDestroy  {
     
   }
 
- 
+  isSubmitButtonEnabledPredict() {
+    return this.selectState !="" && this.selectCrop !="" && this.pa1 != 0 && this.pa2 != 0 && this.pa3 != 0 && this.pa4 != 0 && this.prod1 != 0 && this.prod2 != 0 && this.prod3 != 0;
+  }
 
+  submitFormPredict() {
+    console.log("submit");
+
+    if(this.isSubmitButtonEnabledPredict()) {
+      let predict = new Predict(this.selectState, this.selectCrop, this.pa1, this.prod1, this.pa2, this.prod2, this.pa3, this.prod3, this.pa4);
+      this.predictService.postPredict(predict).subscribe((data) => {
+        this.responseData = JSON.parse(JSON.stringify(data));
+      });
+    }
+  }
 
 }
