@@ -15,14 +15,14 @@ def crossover(parent1, parent2, number_genes):
     child = parent1[:crossover_point] + [gene for gene in parent2 if gene not in parent1[:crossover_point]]
 
     while len(child) > number_genes:
-        child.pop()  # Remover genes extras
+        child.pop() 
 
     while len(child) < number_genes:
         remaining_genes = [gene for gene in parent1 if gene not in child and gene not in parent2[:crossover_point]]
         if remaining_genes:
             child.append(random.choice(remaining_genes))
         else:
-            break  # Evitar um loop infinito se não houver genes restantes
+            break 
 
     return child
 
@@ -91,11 +91,9 @@ def genetic_algorithm(population, mutation_rate, selected_columns, crops, filter
 def run(weights, year, number_genes, state, population_size, max_generations_without_improvement, temporal, max_time, mutation_rate):
     global prev_fitness
 
-    # Carregar o dataset
-    dataset_path = "Dataset_Planning.csv"
+    dataset_path = "C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     dataset = pd.read_csv(dataset_path)
 
-    # Selecionar as colunas relevantes
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost',
                         'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = dataset[selected_columns]
@@ -104,7 +102,6 @@ def run(weights, year, number_genes, state, population_size, max_generations_wit
 
     start_time = time.time()
 
-    # Uso do algoritmo genético
     population = initialize_population(population_size, crops, number_genes)
     prev_fitness = evaluate_fitness(population[0], filtered_data, weights)
     current_generations_without_improvement = 0
@@ -120,10 +117,4 @@ def run(weights, year, number_genes, state, population_size, max_generations_wit
         elapsed_time = time.time() - start_time
         prev_fitness = final_fitness
 
-    # Exibir os resultados
     return best_individual, final_fitness, elapsed_time
-
-result = run([0.1, 0.2, 0.3, 0.4], 2019, 3, 'Andhra Pradesh', 50, 5, False, 4, 0.1)
-print("Melhor indivíduo:", result[0])
-print("Fitness/Cost:", 1 / result[1])
-print("Tempo decorrido: {:.2f} segundos".format(result[2]))

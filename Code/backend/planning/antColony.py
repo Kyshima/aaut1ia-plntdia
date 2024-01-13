@@ -23,20 +23,17 @@ def update_pheromones(pheromones, solutions, scores, decay_rate, crops):
     return pheromones
 
 def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time):
-    # Load CSV data
-    path = "Dataset_Planning.csv"
+
+    path = "C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     df = pd.read_csv(path)
 
-    # Selecionar as colunas relevantes
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = df[selected_columns]
     filtered_data = df[(df['Crop_Year'] == year) & (df['State'] == state)]
     crops = filtered_data['Crop'].unique()
 
-    # Inicialização de feromônios
     pheromones = initialize_pheromones(len(crops), pheromone_initial)
 
-    # Algoritmo ACO
     best_solution = None
     best_score = float('inf')
 
@@ -63,8 +60,3 @@ def ant_colony_optimization(weights, state, year, number_crops, pheromone_initia
             best_solution = solutions[np.argmin(scores)]
 
     return best_solution, best_score, elapsed_time
-
-result = ant_colony_optimization([0.1, 0.2, 0.3, 0.4], 'Andhra Pradesh', 2019, 3, 1.0, 0.5, 1.0, 2.0, 10, 100, True, 4)
-print(f"Melhor Solução: {result[0]}")
-print(f"Melhor Score/Dinheiro: {result[1]}")
-print("Tempo decorrido: {:.2f} segundos".format(result[2]))
