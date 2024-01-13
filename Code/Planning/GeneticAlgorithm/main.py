@@ -10,7 +10,7 @@ state = 'Andhra Pradesh'
 population_size = 500
 max_generations_without_improvement = 10
 current_generations_without_improvement = 0
-temporal = True
+temporal = False
 max_time = 4  #(segundos)
 
 def initialize_population(population_size, crops):
@@ -118,14 +118,14 @@ if __name__ == "__main__":
     dataset_path = "Dataset_Planning.csv"
     dataset = pd.read_csv(dataset_path)
 
-    start_time = time.time()
-
     # Selecionar as colunas relevantes
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost',
                         'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = dataset[selected_columns]
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
+
+    start_time = time.time()
 
     # Uso do algoritmo genético
     population = initialize_population(population_size, crops)

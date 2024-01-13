@@ -1,13 +1,41 @@
+----------------------------------------------------------------
+Media de Tempo de Execucao: 0.44 segundos, usando 50 individuos, e 5 maximo de iteracoes:
+
 Percentagem de uso:
-Sunflower: 98.00%
-Sesamum: 98.00%
-Moong(Green Gram): 72.00%
-Jowar: 24.00%
-Urad: 8.00%
+Sesamum: 74.00%
+Sunflower: 72.00%
+Jowar: 44.00%
+Gram: 36.00%
+Moong(Green Gram): 32.00%
+Urad: 26.00%
+Arhar/Tur: 14.00%
+Maize: 2.00%
 
 Calculo da media de custo:
-Moong(Green Gram): Media de 39478.62
-Sesamum: Media de 40026.27
-Sunflower: Media de 40026.27
-Jowar: Media de 40896.09
-Urad: Media de 43956.46
+Sesamum: Media de 46518.11
+Sunflower: Media de 47206.05
+Moong(Green Gram): Media de 47613.47
+Urad: Media de 48849.47
+Jowar: Media de 51542.49
+Arhar/Tur: Media de 56556.11
+Groundnut: Media de 58509.01
+Gram: Media de 59033.03
+Cotton(lint): Media de 78212.72
+Maize: Media de 80254.03
+----------------------------------------------------------------
+Media de Tempo de Execucao: 3.17 segundos, usando 200 individuos, e 10 maximo de iteracoes:
+
+Percentagem de uso:
+Sunflower: 98.00%
+Sesamum: 92.00%
+Moong(Green Gram): 72.00%
+Jowar: 22.00%
+Urad: 16.00%
+
+Calculo da media de custo:
+Sunflower: Media de 40589.31
+Moong(Green Gram): Media de 41194.68
+Sesamum: Media de 41317.85
+Jowar: Media de 43307.36
+Urad: Media de 46002.46
+Gram: Media de 47057.08
