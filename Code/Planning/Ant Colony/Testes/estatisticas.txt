@@ -37,3 +37,15 @@ Moong(Green Gram): Media de 39477.62
 Sesamum: Media de 39534.32
 Sunflower: Media de 39534.32
 Jowar: Media de 40895.09
+---------------------------------------------------------------
+Media de Tempo de Execucao: 2.62 segundos, usando 20 formigas, e 100 iteracoes:
+
+Percentagem de uso:
+Sunflower: 100.00%
+Moong(Green Gram): 100.00%
+Sesamum: 100.00%
+
+Calculo da media de custo:
+Sunflower: Media de 39477.62
+Moong(Green Gram): Media de 39477.62
+Sesamum: Media de 39477.62
