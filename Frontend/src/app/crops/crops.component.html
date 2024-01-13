@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body style="margin: 0">
+
+<div class="body">
+  <div class="crops-text">
+    For Predicting purposes, please click on the "Predict" button.
+    For Planning purposes, please click on the "Plan" button.
+  </div>
+
+  <div style="display: flex;">
+    <div class="half-div">
+      <button (click)="navigateToPredict()">Predict</button>
+    </div>
+    <div class="half-div">
+        <button (click)="navigateToPlan()">Plan</button>
+    </div>
+  </div>
+  
+</div>
+</body>
+
+
+<script>
+  function teste() {
+    console.log("sdcbsdjhcsd");
+
+  }
+
+  function updateSideBar()
+  {
+    var sideBar = document.getElementById("sideBar");
+    console.log(sideBar);
+  }
+
+  updateSideBar();
+</script>
+</html>
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body style="margin: 0">
+
+<div class="body">
+ 
+  <div class="half-div">
+    <div style="display: flex;justify-content: center;">
+      <div class="category-title">
+        Genetic Algorithm
+      </div>
+    </div> 
+
+    <div class="second-division">
+      <div class="half-questions">
+        <div class="questions">
+          <label>What Indian state do you want to plan for?</label>
+          <input type="text" required [(ngModel)]="stateInputAG">
+        </div>
+        <div class="questions">
+          <label>What are the cost wheights to consider?</label>
+          <label>Production Cost</label>
+          <input title="Production Cost"  type="text" required [(ngModel)]="prodCostAG">
+          <label style="margin-top: 5px;">Cultivation Cost</label>
+          <input title="Cultivation Cost"  type="text" required [(ngModel)]="cultCostAG">
+          <label style="margin-top: 5px;">Operation Cost</label>
+          <input title="Operation Cost"  type="text" required [(ngModel)]="operCostAG">
+          <label style="margin-top: 5px;">Fixed Cost</label>
+          <input title="Fixed Cost"  type="text" required [(ngModel)]="fixedCostAG">
+        </div>
+      </div>
+      <div class="half-questions">
+        <div class="questions">
+          <label>How many results do you want?</label>
+          <input type="text" required [(ngModel)]="numResultsAG">
+        </div>
+        <div class="questions">
+          <button style="margin-top: 20px;" [disabled]="!isSubmitButtonEnabledAG()" (click)="submitFormAG()">Submit</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="results">
+      <div id="response_div" class="response-div" >
+        <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
+        <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
+
+          <div class="response" >
+
+            <div class="answer-div">
+              hfgd
+            </div>
+            <div class="explanation-div">
+              xghfgh
+            </div>
+
+            <!-- {{ i + 1 }} -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="half-div">
+    <div style="display: flex;justify-content: center;">
+      <div class="category-title">
+        Ant Colony Optimization Algorithm
+      </div>
+    </div>
+ 
+    <div class="second-division">
+      <div class="half-questions">
+        <div class="questions">
+          <label>What Indian state do you want to plan for?</label>
+          <input type="text" required [(ngModel)]="stateInputACO">
+        </div>
+        <div class="questions">
+          <label>What are the cost wheights to consider?</label>
+          <label>Production Cost</label>
+          <input title="Production Cost"  type="text" required [(ngModel)]="prodCostACO">
+          <label style="margin-top: 5px;">Cultivation Cost</label>
+          <input title="Cultivation Cost"  type="text" required [(ngModel)]="cultCostACO">
+          <label style="margin-top: 5px;">Operation Cost</label>
+          <input title="Operation Cost"  type="text" required [(ngModel)]="operCostACO">
+          <label style="margin-top: 5px;">Fixed Cost</label>
+          <input title="Fixed Cost"  type="text" required [(ngModel)]="fixedCostACO">
+        </div>
+      </div>
+      <div class="half-questions">
+        <div class="questions">
+          <label>How many results do you want?</label>
+          <input type="text" required [(ngModel)]="numResultsACO">
+        </div>
+        <div class="questions">
+          <button style="margin-top: 20px;" [disabled]="!isSubmitButtonEnabledACO()" (click)="submitFormACO()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="results">
+      <div id="response_div" class="response-div" >
+        <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
+        <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
+
+          <div class="response" >
+
+            <div class="answer-div">
+              hfgd
+            </div>
+            <div class="explanation-div">
+              xghfgh
+            </div>
+
+            <!-- {{ i + 1 }} -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
+

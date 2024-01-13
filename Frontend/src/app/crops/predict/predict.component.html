@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body style="margin: 0">
+
+<div class="body">
+  <div style="display: flex;justify-content: center;">
+    <div class="category-title">
+      Prediction Menu
+    </div>
+  </div> 
+
+  <div class="second-division">
+    <div class="half-questions">
+      <div class="questions">
+        <label>Select1?</label>
+        <select id="engine" [(ngModel)]="select1"  > <!--(change)="onEngineChange()"-->
+          <option value="" disabled selected>Select an option</option>
+          <option value="prolog">Prolog</option>
+          <option value="java">Java</option> 
+        </select>
+      </div>
+      <div class="questions">
+        <label>Select2?</label>
+        <select id="engine" [(ngModel)]="select2"  > <!--(change)="onEngineChange()"-->
+          <option value="" disabled selected>Select an option</option>
+          <option value="prolog">Prolog</option>
+          <option value="java">Java</option>
+        </select>
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input1">
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input2">
+      </div>
+    </div>  
+    <div class="half-questions">
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input3">
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input4">
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input5">
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input6">
+      </div>
+      <div class="questions">
+        <label>What is the number of units?</label>
+        <input type="text" required [(ngModel)]="input7">
+      </div>
+    </div>
+  </div>    
+</div>  
+</body>
+
+
+<script>
+  function teste() {
+    console.log("sdcbsdjhcsd");
+
+  }
+
+  function updateSideBar()
+  {
+    var sideBar = document.getElementById("sideBar");
+    console.log(sideBar);
+  }
+
+  updateSideBar();
+</script>
+</html>
+

@@ -1,0 +1,9 @@
+export class Plan {
+
+  constructor(
+    
+  ) {
+  }
+
+
+}

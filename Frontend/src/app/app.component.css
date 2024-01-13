@@ -1,0 +1,56 @@
+.header {
+  background-color: #083f73;
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body{
+  font-family: "Roboto Light ", sans-serif;
+  height: 95vh;
+  width: auto;
+}
+
+.logo {
+  width: auto;
+  height: 4vh;
+}
+
+.sidebar{
+  flex-grow: 0;
+  background-color: #DDD7D7;
+  width: 20vh;
+  height: 95vh;
+}
+
+.sidebar-button{
+  font-size: large;
+  height: 6vh;
+  width: 20vh;
+  background-color: #DDD7D7;
+  border: #DDD7D7;
+}
+
+.sidebar-button:hover{
+
+  background-color: grey;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar-title{
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  width: 20vh;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    max-width: 80%;
+  }
+}

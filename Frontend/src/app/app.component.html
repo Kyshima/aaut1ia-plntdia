@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body style="margin: 0">
+<div class="header">
+  <img class="logo" src="assets/logo.png" alt="Logo">
+</div>
+<div class="body">
+  <div style="display: flex">
+    <div id="sideBar" class="sidebar">
+      <div>
+        <button class="sidebar-button" [routerLink]="['/packages']">Packages</button>
+      </div>
+      <div>
+        <button class="sidebar-button" [routerLink]="['/crops']">Crops</button>
+      </div>
+      
+    </div>
+    <div style="flex-grow: 10; ">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
