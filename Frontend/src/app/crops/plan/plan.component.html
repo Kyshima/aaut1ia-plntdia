@@ -86,22 +86,20 @@
     </div>
 
     <div class="results">
-      <div id="response_div" class="response-div" >
+      <div id="response_div" class="response-div" *ngIf="responseDataAG">
         <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
         <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
-
-          <div class="response" >
-
-            <div class="answer-div">
-              hfgd
+  
+            <div class="response" *ngIf="responseDataAG.length == 0">No Results provided with the given Product information.</div>
+  
+            <div class="response">
+  
+              <div class="answer-div">
+                {{responseDataAG}}
+              </div>
+  
+              <!-- {{ i + 1 }} -->
             </div>
-            <div class="explanation-div">
-              xghfgh
-            </div>
-
-            <!-- {{ i + 1 }} -->
-          </div>
-          
         </div>
       </div>
     </div>
@@ -188,22 +186,20 @@
     </div>
 
     <div class="results">
-      <div id="response_div" class="response-div" >
+      <div id="response_div" class="response-div" *ngIf="responseDataACO">
         <label class="label-div" style="font-size: 30px;padding-bottom: 5px">Results</label>
         <div style="overflow-x: hidden; overflow-y: scroll;" id="result_div">
-
-          <div class="response" >
-
-            <div class="answer-div">
-              hfgd
+  
+            <div class="response" *ngIf="responseDataACO.length == 0">No Results provided with the given Product information.</div>
+  
+            <div class="response">
+  
+              <div class="answer-div">
+                {{responseDataACO}}
+              </div>
+  
+              <!-- {{ i + 1 }} -->
             </div>
-            <div class="explanation-div">
-              xghfgh
-            </div>
-
-            <!-- {{ i + 1 }} -->
-          </div>
-          
         </div>
       </div>
     </div>

@@ -12,6 +12,9 @@ export class PlanComponent implements OnInit, OnDestroy  {
   constructor(private planService: PlanService) {
   }
 
+  responseDataAG: any = '';
+  responseDataACO: any = '';
+
   stateInputACO: string = '';
   prodCostACO: number = 0;
   cultCostACO: number = 0;
@@ -65,15 +68,21 @@ export class PlanComponent implements OnInit, OnDestroy  {
   submitFormAG() {
     console.log("submit");
 
-    // let food = new Food(category, big, liquid, fragile, units, length, width, height, budget);
-    // this.foodService.postFoodJava(food).subscribe((data) => {
-    //   this.responseData = JSON.parse(JSON.stringify(data));
-
-    // });
+    if(this.isSubmitButtonEnabledAG() && this.canSubmitCostAG) {
+      let predict = new Plan();
+      this.planService.postPlan(predict).subscribe((data) => {
+        this.responseDataAG = JSON.parse(JSON.stringify(data));
+      });
+    }
   }
-
+ 
   submitFormACO() {
-    console.log("submit");
+    if(this.isSubmitButtonEnabledACO() && this.canSubmitCostACO) {
+      let predict = new Plan();
+      this.planService.postPlan(predict).subscribe((data) => {
+        this.responseDataACO = JSON.parse(JSON.stringify(data));
+      });
+    }
   }
 
 }
