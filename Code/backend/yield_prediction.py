@@ -1,13 +1,8 @@
 import pandas as pd
-import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import KFold
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-import matplotlib.pyplot as plt
 import joblib
 
-model = loaded_rf = joblib.load("best_random_forest_model.joblib")
+#model = loaded_rf = joblib.load("best_random_forest_model.joblib")
+model = loaded_rf = joblib.load('C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backendfunction/best_random_forest_model.joblib')
 
 def predict(State, Crop, Area, prodAnt1, areaAnt1, prodAnt2, areaAnt2, prodAnt3, areaAnt3):
     columns = [
@@ -46,14 +41,9 @@ def predict(State, Crop, Area, prodAnt1, areaAnt1, prodAnt2, areaAnt2, prodAnt3,
                          'Production_Ant_2', 'Area_Ant_3',
                          'Production_Ant_3']
 
-    # Set the values for the specified columns in the first row (index 0)
     df.loc[0, columns_to_update] = [1, 1, Area, areaAnt1, prodAnt1,
                                     areaAnt2, prodAnt2,
                                     areaAnt3, prodAnt3]
 
     predictions = model.predict(df)
-    print(predictions[0])
-
-
-if __name__ == "__main__":
-    predict('Kerala', 'Niger seed', 5000,1,1,1,1,1,1)
+    return predictions[0]
