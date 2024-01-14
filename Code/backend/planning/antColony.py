@@ -22,7 +22,7 @@ def update_pheromones(pheromones, solutions, scores, decay_rate, crops):
             pheromones[idx_i, idx_j] += 1.0 / score
     return pheromones
 
-def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time):
+def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, num_ants, num_iterations, temporal, max_time):
 
     path = "D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     df = pd.read_csv(path)
