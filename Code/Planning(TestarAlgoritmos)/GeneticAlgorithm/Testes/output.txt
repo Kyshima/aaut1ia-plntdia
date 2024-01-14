@@ -1,0 +1,200 @@
+
+Execucao 1:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 2:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 3:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 4:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 5:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 6:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 7:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Jowar']
+Fitness/Cost: 40896.08514936474
+
+Execucao 8:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 9:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 10:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 11:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 12:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 13:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 14:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 15:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 16:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 17:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 18:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 19:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 20:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 21:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 22:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 23:
+Melhor individuo: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Fitness/Cost: 39478.6193923047
+
+Execucao 24:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 25:
+Melhor individuo: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Fitness/Cost: 39478.6193923047
+
+Execucao 26:
+Melhor individuo: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Fitness/Cost: 39478.6193923047
+
+Execucao 27:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 28:
+Melhor individuo: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Fitness/Cost: 39478.6193923047
+
+Execucao 29:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 30:
+Melhor individuo: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Fitness/Cost: 39478.6193923047
+
+Execucao 31:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 32:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 33:
+Melhor individuo: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Fitness/Cost: 39478.6193923047
+
+Execucao 34:
+Melhor individuo: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Fitness/Cost: 39478.6193923047
+
+Execucao 35:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 36:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 37:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 38:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 39:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 40:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 41:
+Melhor individuo: ['Sunflower', 'Jowar', 'Sesamum']
+Fitness/Cost: 40896.08514936474
+
+Execucao 42:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 43:
+Melhor individuo: ['Moong(Green Gram)', 'Sesamum', 'Sunflower']
+Fitness/Cost: 39478.6193923047
+
+Execucao 44:
+Melhor individuo: ['Moong(Green Gram)', 'Sunflower', 'Sesamum']
+Fitness/Cost: 39478.6193923047
+
+Execucao 45:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 46:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 47:
+Melhor individuo: ['Sunflower', 'Sesamum', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 48:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
+
+Execucao 49:
+Melhor individuo: ['Sunflower', 'Moong(Green Gram)', 'Sesamum']
+Fitness/Cost: 39478.6193923047
+
+Execucao 50:
+Melhor individuo: ['Sesamum', 'Sunflower', 'Moong(Green Gram)']
+Fitness/Cost: 39478.619392304696
