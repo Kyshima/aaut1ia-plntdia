@@ -22,7 +22,7 @@ def update_pheromones(pheromones, solutions, scores, decay_rate, crops):
             pheromones[idx_i, idx_j] += 1.0 / score
     return pheromones
 
-def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, num_ants, num_iterations, temporal, max_time):
+def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time):
 
     path = "D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     df = pd.read_csv(path)
@@ -30,6 +30,10 @@ def ant_colony_optimization(weights, state, year, number_crops, pheromone_initia
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = df[selected_columns]
     filtered_data = df[(df['Crop_Year'] == year) & (df['State'] == state)]
+    #----------
+    cropsCosts = filtered_data[['Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost']].groupby('Crop').mean().reset_index()
+    cropsCosts['Heuristic'] = 1 / ((cropsCosts['ProdCost'] * weights[0]) + (cropsCosts['CultCost'] * weights[1]) + (cropsCosts['OperCost'] * weights[2]) + (cropsCosts['FixedCost'] * weights[3]))
+    #----------
     crops = filtered_data['Crop'].unique()
 
     if crops.size < number_crops:
@@ -45,9 +49,22 @@ def ant_colony_optimization(weights, state, year, number_crops, pheromone_initia
     for iteration in range(num_iterations):
         solutions = []
         scores = []
-
+        #-------
+        probabilities = [13]
+        #-------
         for ant in range(num_ants):
-            current_crops = random.sample(list(crops), number_crops)
+            #--------
+            for pheromoneLine in pheromones:
+                probabilities += (pheromoneLine ** alpha) * ((cropsCosts['Heuristic'] + 1e-10) ** beta)
+            
+            probabilities /= probabilities.sum()
+            cropIndexes = random.sample(list(probabilities.index), number_crops)
+
+            current_crops = list()
+            for x in cropIndexes:
+                current_crops.append(crops[x])
+            #--------
+            #current_crops = random.sample(list(crops), number_crops)
             solutions.append(current_crops)
             scores.append(calculate_score(current_crops, filtered_data, weights))
 

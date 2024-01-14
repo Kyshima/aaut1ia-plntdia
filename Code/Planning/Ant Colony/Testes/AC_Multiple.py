@@ -26,6 +26,10 @@ max_time = 4  # (segundos)
 selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
 relevant_data = df[selected_columns]
 filtered_data = df[(df['Crop_Year'] == year) & (df['State'] == state)]
+#----------
+cropsCosts = filtered_data[['Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost']].groupby('Crop').mean().reset_index()
+cropsCosts['Heuristic'] = 1 / ((cropsCosts['ProdCost'] * weights[0]) + (cropsCosts['CultCost'] * weights[1]) + (cropsCosts['OperCost'] * weights[2]) + (cropsCosts['FixedCost'] * weights[3]))
+#----------
 crops = filtered_data['Crop'].unique()
 
 # Inicialização de feromônios
@@ -59,9 +63,22 @@ def run_aco_once(pheromones):
     for iteration in range(num_iterations):
         solutions = []
         scores = []
-
+        #-------
+        probabilities = [13]
+        #-------
         for ant in range(num_ants):
-            current_crops = random.sample(list(crops), number_crops)
+            #--------
+            for pheromoneLine in pheromones:
+                probabilities += (pheromoneLine ** alpha) * ((cropsCosts['Heuristic'] + 1e-10) ** beta)
+            
+            probabilities /= probabilities.sum()
+            cropIndexes = random.sample(list(probabilities.index), number_crops)
+
+            current_crops = list()
+            for x in cropIndexes:
+                current_crops.append(crops[x])
+            #--------
+            #current_crops = random.sample(list(crops), number_crops)
             solutions.append(current_crops)
             scores.append(np.sum(calculate_score(current_crops)))
 

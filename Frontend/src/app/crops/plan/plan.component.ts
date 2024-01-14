@@ -47,11 +47,11 @@ export class PlanComponent implements OnInit, OnDestroy  {
 
   
   isSubmitButtonEnabledACO() {
-    return this.stateInputACO !="" && this.prodCostACO != 0 && this.cultCostACO != 0 && this.operCostACO != 0 && this.fixedCostACO != 0 && this.yearACO !=0 && this.numResultsACO != 0;
+    return this.stateInputACO !="" && (this.prodCostACO != 0 || this.cultCostACO != 0 || this.operCostACO != 0 || this.fixedCostACO) != 0 && this.yearACO !=0 && this.numResultsACO != 0;
   }
 
   isSubmitButtonEnabledAG() {
-    return this.stateInputAG !="" && this.prodCostAG != 0 && this.cultCostAG != 0 && this.operCostAG != 0 && this.fixedCostAG != 0 && this.yearAG !=0 && this.numResultsAG != 0;
+    return this.stateInputAG !="" && (this.prodCostAG != 0 || this.cultCostAG != 0 || this.operCostAG != 0 || this.fixedCostAG != 0) && this.yearAG !=0 && this.numResultsAG != 0;
   }
 
   onCostACOChange() {
