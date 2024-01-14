@@ -1,0 +1,15 @@
+{
+    "pheromone_initial": 1.0,
+    "pheromone_decay": 0.5,
+    "alpha": 1.0,
+    "beta": 2.0,
+    "num_ants": 10,
+    "num_iterations": 100,
+    "temporalACO": true,
+    "max_timeACO": 4,
+    "population_size": 50,
+    "max_generations_without_improvement": 5,
+    "temporalAG": true,
+    "max_timeAG": 4,
+    "mutation_rate": 0.1
+}

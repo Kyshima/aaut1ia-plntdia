@@ -3,7 +3,7 @@ import json
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('APY.csv')
+df = pd.read_csv('D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Dataset/Dataset-planing/APY.csv')
 df.dropna(inplace=True)
 
 df = df.drop(columns=['District ', 'Season'])
@@ -15,11 +15,11 @@ df_temp = []
 
 for year in range(4, 22):
     if year < 9:
-        f = open('DataSet/200' + str(year) + '-0' + str(year + 1) + '.json')
+        f = open('D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/DataSet/Dataset-planing/DataSet/200' + str(year) + '-0' + str(year + 1) + '.json')
     elif year == 9:
-        f = open('DataSet/200' + str(year) + '-' + str(year + 1) + '.json')
+        f = open('D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/DataSet/Dataset-planing/DataSet/200' + str(year) + '-' + str(year + 1) + '.json')
     else:
-        f = open('DataSet/20' + str(year) + '-' + str(year + 1) + '.json')
+        f = open('D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/DataSet/Dataset-planing/DataSet/20' + str(year) + '-' + str(year + 1) + '.json')
 
     data = json.load(f)
     for crop in data:
@@ -78,6 +78,8 @@ df_temp['Crop'] = np.where(df_temp['Crop'] == "Moong", "Moong(Green Gram)", df_t
 df_merge = df_temp.merge(df_group, how='left', on=['State','Crop_Year', 'Crop'])
 df_merge.dropna(inplace=True)
 print(df_merge)
+
+print(df_merge['State'].unique())
 
 
 df_merge.to_csv("Dataset_Planning.csv", index=False)

@@ -1,49 +1,46 @@
 from flask import Flask, request, jsonify
-from Code.backend.planning.antColony import ant_colony_optimization
-from Code.backend.planning.geneticAlgorithm import run
+from antColony import ant_colony_optimization
+from geneticAlgorithm import run
 from flask_cors import CORS
+import json
 
 app = Flask(__name__)
 CORS(app)
 
 @app.route('/planning/geneticAlgorithm', methods=['POST'])
 def get_planningGA():
+    json_file_path = 'D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/configurationPlanning.json'
+    with open(json_file_path, 'r') as file:
+        # Load the JSON data from the file
+        config_data = json.load(file)
+    
     
     data = request.get_json()
 
     state = data.get('state')
     weights = data.get('weights')
-    year = 2019
-    number_genes = data.get('number_genes')
-    population_size = data.get('population_size')
-    max_generations_without_improvement = data.get('max_generations_without_improvement')
-    temporal = float(data.get('temporal'))
-    max_time = float(data.get('max_time'))
-    mutation_rate = float(data.get('mutation_rate'))
+    year = int(data.get('year'))
+    number_genes = int(data.get('number_genes'))
 
-    result = run(weights, year, number_genes, state, population_size, max_generations_without_improvement, temporal, max_time, mutation_rate)
+    result = run(weights, year, number_genes, state, config_data['population_size'], config_data['max_generations_without_improvement'], config_data['temporalAG'], config_data['max_timeAG'], config_data['mutation_rate'])
 
     return jsonify({'teste': result})
 
 @app.route('/planning/antColony', methods=['POST'])
 def  get_planningACO():
+    json_file_path = 'D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/configurationPlanning.json'
+    with open(json_file_path, 'r') as file:
+        # Load the JSON data from the file
+        config_data = json.load(file)
     
     data = request.get_json()
 
     weights = data.get('weights')
     state = data.get('state')
-    number_crops = data.get('number_crops')
-    pheromone_initial = float(data.get('pheromone_initial'))
-    pheromone_decay = float(data.get('pheromone_decay'))
-    alpha = float(data.get('alpha'))
-    beta = float(data.get('beta'))
-    num_ants = data.get('num_ants')
-    num_iterations = data.get('num_iterations')
-    temporal = float(data.get('temporal'))
-    max_time = float(data.get('max_time'))
-    year = 2017
+    number_crops = int(data.get('number_crops'))
+    year = int(data.get('year'))
 
-    result = ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time)
+    result = ant_colony_optimization(weights, state, year, number_crops, config_data['pheromone_initial'], config_data['pheromone_decay'], config_data['alpha'], config_data['beta'], config_data['num_ants'], config_data['num_iterations'], config_data['temporalACO'], config_data['max_timeACO'])
 
     return jsonify({'teste': result})
 

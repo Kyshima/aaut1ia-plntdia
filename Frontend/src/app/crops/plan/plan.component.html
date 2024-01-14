@@ -17,39 +17,26 @@
           <label>What Indian state do you want to plan for?</label>
           <select id="stateInputAG" [(ngModel)]="stateInputAG"  > <!--(change)="onEngineChange()"-->
             <option value="" disabled selected>Select an option</option>
-            <option value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option> 
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="Assam">Assam</option>
-            <option value="Bihar">Bihar</option>
-            <option value="CHANDIGARH">CHANDIGARH</option>
-            <option value="Chhattisgarh">Chhattisgarh</option>
-            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-            <option value="Daman and Diu">Daman and Diu</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Goa">Goa</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Gujarat">Gujarat</option>
-            <option value="Haryana">Haryana</option>
-            <option value="Himachal Pradesh">Himachal Pradesh</option>
-            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Laddak">Laddak</option>
+            <option value="Karnataka">Karnataka</option>
             <option value="Madhya Pradesh">Madhya Pradesh</option>
             <option value="Maharashtra">Maharashtra</option>
-            <option value="Manipur">Manipur</option>
-            <option value="Meghalaya">Meghalaya</option>
-            <option value="Mizoram">Mizoram</option>
-            <option value="Nagaland">Nagaland</option>
-            <option value="Puducherry">Puducherry</option>
-            <option value="Punjab">Punjab</option>
+            <option value="Haryana">Haryana</option>
             <option value="Rajasthan">Rajasthan</option>
-            <option value="Sikkim">Sikkim</option>
-            <option value="THE DADRA AND NAGAR HAVELI">THE DADRA AND NAGAR HAVELI</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Telangana">Telangana</option>
             <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
             <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Assam">Assam</option>
+            <option value="Kerala">Kerala</option>
             <option value="West Bengal">West Bengal</option>
+            <option value="Telangana">Telangana</option>
           </select>
         </div>
         <div class="questions">
@@ -74,6 +61,29 @@
       </div>
       <div class="half-questions">
         <div class="questions">
+          <label>What year would you like to choose?</label>
+          <select id="yearAG" [(ngModel)]="yearAG"  > <!--(change)="onEngineChange()"-->
+            <option value=0 disabled selected>Select an option</option>
+            <option value=2004>2004</option>
+            <option value=2005>2005</option>
+            <option value=2006>2006</option>
+            <option value=2007>2007</option>
+            <option value=2007>2007</option>
+            <option value=2008>2008</option>
+            <option value=2009>2009</option>
+            <option value=2010>2010</option>
+            <option value=2011>2011</option>
+            <option value=2012>2012</option>
+            <option value=2013>2013</option>
+            <option value=2014>2014</option>
+            <option value=2015>2015</option>
+            <option value=2016>2016</option>
+            <option value=2017>2017</option>
+            <option value=2018>2018</option>
+            <option value=2019>2019</option>
+          </select>
+        </div>
+        <div class="questions">
           <label>How many results do you want?</label>
           <input type="text" required [(ngModel)]="numResultsAG">
         </div>
@@ -95,7 +105,8 @@
             <div class="response">
   
               <div class="answer-div">
-                {{responseDataAG}}
+                {{responseDataAG.teste[0]}}
+                
               </div>
   
               <!-- {{ i + 1 }} -->
@@ -119,39 +130,27 @@
           <label>What Indian state do you want to plan for?</label>
           <select id="stateInputAG" [(ngModel)]="stateInputACO"  > <!--(change)="onEngineChange()"-->
             <option value="" disabled selected>Select an option</option>
-            <option value="Andaman and Nicobar Island">Andaman and Nicobar Island</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option> 
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="Assam">Assam</option>
-            <option value="Bihar">Bihar</option>
-            <option value="CHANDIGARH">CHANDIGARH</option>
-            <option value="Chhattisgarh">Chhattisgarh</option>
-            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
-            <option value="Daman and Diu">Daman and Diu</option>
-            <option value="Delhi">Delhi</option>
-            <option value="Goa">Goa</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Gujarat">Gujarat</option>
-            <option value="Haryana">Haryana</option>
-            <option value="Himachal Pradesh">Himachal Pradesh</option>
-            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Laddak">Laddak</option>
+            <option value="Karnataka">Karnataka</option>
             <option value="Madhya Pradesh">Madhya Pradesh</option>
             <option value="Maharashtra">Maharashtra</option>
-            <option value="Manipur">Manipur</option>
-            <option value="Meghalaya">Meghalaya</option>
-            <option value="Mizoram">Mizoram</option>
-            <option value="Nagaland">Nagaland</option>
-            <option value="Puducherry">Puducherry</option>
-            <option value="Punjab">Punjab</option>
+            <option value="Haryana">Haryana</option>
             <option value="Rajasthan">Rajasthan</option>
-            <option value="Sikkim">Sikkim</option>
-            <option value="THE DADRA AND NAGAR HAVELI">THE DADRA AND NAGAR HAVELI</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Telangana">Telangana</option>
             <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
             <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Assam">Assam</option>
+            <option value="Kerala">Kerala</option>
             <option value="West Bengal">West Bengal</option>
+            <option value="Telangana">Telangana</option>
+
           </select>
         </div>
         <div class="questions">
@@ -176,6 +175,29 @@
       </div>
       <div class="half-questions">
         <div class="questions">
+          <label>What year would you like to choose?</label>
+          <select id="yearACO" [(ngModel)]="yearACO"  > <!--(change)="onEngineChange()"-->
+            <option value=0 disabled selected>Select an option</option>
+            <option value=2004>2004</option>
+            <option value=2005>2005</option>
+            <option value=2006>2006</option>
+            <option value=2007>2007</option>
+            <option value=2007>2007</option>
+            <option value=2008>2008</option>
+            <option value=2009>2009</option>
+            <option value=2010>2010</option>
+            <option value=2011>2011</option>
+            <option value=2012>2012</option>
+            <option value=2013>2013</option>
+            <option value=2014>2014</option>
+            <option value=2015>2015</option>
+            <option value=2016>2016</option>
+            <option value=2017>2017</option>
+            <option value=2018>2018</option>
+            <option value=2019>2019</option>
+          </select>
+        </div>
+        <div class="questions">
           <label>How many results do you want?</label>
           <input type="text" required [(ngModel)]="numResultsACO">
         </div>
@@ -195,7 +217,8 @@
             <div class="response">
   
               <div class="answer-div">
-                {{responseDataACO}}
+                {{responseDataACO.teste[0]}}
+                
               </div>
   
               <!-- {{ i + 1 }} -->

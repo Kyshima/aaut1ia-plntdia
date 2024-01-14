@@ -34,7 +34,10 @@ def mutate(individual, mutation_rate, crops):
             mutated_gene = gene if random.random() > mutation_rate else 1 - gene
         else:
             remaining_genes = [crop for crop in crops if crop not in mutated_individual]
-            mutated_gene = random.choice(remaining_genes) if random.random() < mutation_rate else gene
+            if len(remaining_genes) > 0:
+                mutated_gene = random.choice(remaining_genes) if random.random() < mutation_rate else gene
+            else:
+                mutated_gene = gene
 
         mutated_individual[i] = mutated_gene
 
@@ -91,7 +94,7 @@ def genetic_algorithm(population, mutation_rate, selected_columns, crops, filter
 def run(weights, year, number_genes, state, population_size, max_generations_without_improvement, temporal, max_time, mutation_rate):
     global prev_fitness
 
-    dataset_path = "C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
+    dataset_path = "D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     dataset = pd.read_csv(dataset_path)
 
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost',
@@ -99,6 +102,9 @@ def run(weights, year, number_genes, state, population_size, max_generations_wit
     relevant_data = dataset[selected_columns]
     filtered_data = dataset[(dataset['Crop_Year'] == year) & (dataset['State'] == state)]
     crops = filtered_data['Crop'].unique()
+
+    if crops.size < number_genes:
+        number_genes = crops.size
 
     start_time = time.time()
 
@@ -117,4 +123,4 @@ def run(weights, year, number_genes, state, population_size, max_generations_wit
         elapsed_time = time.time() - start_time
         prev_fitness = final_fitness
 
-    return best_individual, final_fitness, elapsed_time
+    return best_individual, 1/final_fitness, elapsed_time

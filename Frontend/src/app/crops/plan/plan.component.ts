@@ -22,6 +22,7 @@ export class PlanComponent implements OnInit, OnDestroy  {
   operCostACO: number = 0;
   fixedCostACO: number = 0;
   numResultsACO: number = 0;
+  yearACO: number = 0;
 
   stateInputAG: string = '';
   prodCostAG: number = 0;
@@ -29,6 +30,7 @@ export class PlanComponent implements OnInit, OnDestroy  {
   operCostAG: number = 0;
   fixedCostAG: number = 0;
   numResultsAG: number = 0;
+  yearAG: number = 0;
 
   canSubmitCostACO: boolean = false;
   canSubmitCostAG: boolean = false;
@@ -45,11 +47,11 @@ export class PlanComponent implements OnInit, OnDestroy  {
 
   
   isSubmitButtonEnabledACO() {
-    return this.stateInputACO !="" && this.prodCostACO != 0 && this.cultCostACO != 0 && this.operCostACO != 0 && this.fixedCostACO != 0 && this.numResultsACO != 0;
+    return this.stateInputACO !="" && this.prodCostACO != 0 && this.cultCostACO != 0 && this.operCostACO != 0 && this.fixedCostACO != 0 && this.yearACO !=0 && this.numResultsACO != 0;
   }
 
   isSubmitButtonEnabledAG() {
-    return this.stateInputAG !="" && this.prodCostAG != 0 && this.cultCostAG != 0 && this.operCostAG != 0 && this.fixedCostAG != 0 && this.numResultsAG != 0;
+    return this.stateInputAG !="" && this.prodCostAG != 0 && this.cultCostAG != 0 && this.operCostAG != 0 && this.fixedCostAG != 0 && this.yearAG !=0 && this.numResultsAG != 0;
   }
 
   onCostACOChange() {
@@ -71,10 +73,9 @@ export class PlanComponent implements OnInit, OnDestroy  {
 
     if(this.isSubmitButtonEnabledAG() && this.canSubmitCostAG) {
       let weights = [this.prodCostAG, this.cultCostAG, this.operCostAG, this.fixedCostAG];
-      let predict = new AG(weights, this.stateInputAG, 3, 50, 5, 0.1, true, 4);
+      let predict = new AG(weights, this.stateInputAG, this.numResultsAG, this.yearAG);
       this.planService.postAG(predict).subscribe((data) => {
-        //this.responseDataAG = JSON.parse(JSON.stringify(data));
-        console.log(JSON.parse(JSON.stringify(data)));
+        this.responseDataAG = JSON.parse(JSON.stringify(data));
       });
     }
   }
@@ -82,10 +83,9 @@ export class PlanComponent implements OnInit, OnDestroy  {
   submitFormACO() {
     if(this.isSubmitButtonEnabledACO() && this.canSubmitCostACO) {
       let weights = [this.prodCostACO, this.cultCostACO, this.operCostACO, this.fixedCostACO];
-      let predict = new ACO(weights, this.stateInputACO, this.numResultsACO, 1.0, 0.5, 1.0, 2.0, 5, 100, true, 4);
+      let predict = new ACO(weights, this.stateInputACO, this.numResultsACO, this.yearACO);
       this.planService.postACO(predict).subscribe((data) => {
-        //this.responseDataACO = JSON.parse(JSON.stringify(data));
-        console.log(JSON.parse(JSON.stringify(data)));
+        this.responseDataACO = JSON.parse(JSON.stringify(data));
       });
     }
   }

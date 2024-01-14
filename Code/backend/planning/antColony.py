@@ -24,13 +24,16 @@ def update_pheromones(pheromones, solutions, scores, decay_rate, crops):
 
 def ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time):
 
-    path = "C:/Users/Diana/Documents/GitHub/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
+    path = "D:/Faculdade/mestrado/projeto2semestre/aaut1ia-plntdia/Code/backend/planning/Dataset_Planning.csv"
     df = pd.read_csv(path)
 
     selected_columns = ['Crop_Year', 'State', 'Crop', 'ProdCost', 'CultCost', 'OperCost', 'FixedCost', 'TotalCost', 'Area_Total', 'Production_Total', 'Yield_Mean']
     relevant_data = df[selected_columns]
     filtered_data = df[(df['Crop_Year'] == year) & (df['State'] == state)]
     crops = filtered_data['Crop'].unique()
+
+    if crops.size < number_crops:
+        number_crops = crops.size
 
     pheromones = initialize_pheromones(len(crops), pheromone_initial)
 

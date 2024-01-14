@@ -9,8 +9,8 @@ import { ACO } from '../crops/plan/ACO';
 })
 export class PlanService {
 
-  public postUrlACO = 'http://localhost:5000//planning/antColony';
-  public postUrlAG = 'http://localhost:5000//planning/geneticAlgorithm';
+  public postUrlACO = 'http://localhost:5001/planning/antColony';
+  public postUrlAG = 'http://localhost:5001/planning/geneticAlgorithm';
 
   httpOptions = {
     headers: new HttpHeaders({
