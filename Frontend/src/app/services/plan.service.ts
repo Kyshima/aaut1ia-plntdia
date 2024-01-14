@@ -1,14 +1,16 @@
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
-import { Plan } from '../crops/plan/plan';
+import { AG } from '../crops/plan/AG';
+import { ACO } from '../crops/plan/ACO';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlanService {
 
-  public postUrl = 'http://localhost:5000/plan';
+  public postUrlACO = 'http://localhost:5000//planning/antColony';
+  public postUrlAG = 'http://localhost:5000//planning/geneticAlgorithm';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -20,8 +22,12 @@ export class PlanService {
   constructor(private http: HttpClient) {
   }
 
-  postPlan(plan: Plan):  Observable<String> {
-    return this.http.post<String>(this.postUrl, plan, this.httpOptions);
+  postACO(aco: ACO):  Observable<String> {
+    return this.http.post<String>(this.postUrlACO, aco, this.httpOptions);
+  }
+
+  postAG(ag: AG):  Observable<String> {
+    return this.http.post<String>(this.postUrlAG, ag, this.httpOptions);
   }
 
 }

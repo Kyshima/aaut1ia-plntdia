@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
-from Code.backend.prediction.yield_prediction import predict
+from Code.backend.planning.antColony import ant_colony_optimization
+from Code.backend.planning.geneticAlgorithm import run
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -11,37 +12,40 @@ def get_planningGA():
     data = request.get_json()
 
     state = data.get('state')
-    crop = data.get('crop')
-    area = float(data.get('area'))
-    prodAnt1 = float(data.get('prodAnt1'))
-    areaAnt1 = float(data.get('areaAnt1'))
-    prodAnt2 = float(data.get('prodAnt2'))
-    areaAnt2 = float(data.get('areaAnt2'))
-    prodAnt3 = float(data.get('prodAnt3'))
-    areaAnt3 = float(data.get('areaAnt3'))
+    weights = data.get('weights')
+    year = 2019
+    number_genes = data.get('number_genes')
+    population_size = data.get('population_size')
+    max_generations_without_improvement = data.get('max_generations_without_improvement')
+    temporal = float(data.get('temporal'))
+    max_time = float(data.get('max_time'))
+    mutation_rate = float(data.get('mutation_rate'))
 
-    result = predict(state, crop, area, prodAnt1, areaAnt1, prodAnt2, areaAnt2, prodAnt3, areaAnt3)
+    result = run(weights, year, number_genes, state, population_size, max_generations_without_improvement, temporal, max_time, mutation_rate)
 
-    return jsonify({'Yield': result})
+    return jsonify({'teste': result})
 
 @app.route('/planning/antColony', methods=['POST'])
 def  get_planningACO():
     
     data = request.get_json()
 
+    weights = data.get('weights')
     state = data.get('state')
-    crop = data.get('crop')
-    area = float(data.get('area'))
-    prodAnt1 = float(data.get('prodAnt1'))
-    areaAnt1 = float(data.get('areaAnt1'))
-    prodAnt2 = float(data.get('prodAnt2'))
-    areaAnt2 = float(data.get('areaAnt2'))
-    prodAnt3 = float(data.get('prodAnt3'))
-    areaAnt3 = float(data.get('areaAnt3'))
+    number_crops = data.get('number_crops')
+    pheromone_initial = float(data.get('pheromone_initial'))
+    pheromone_decay = float(data.get('pheromone_decay'))
+    alpha = float(data.get('alpha'))
+    beta = float(data.get('beta'))
+    num_ants = data.get('num_ants')
+    num_iterations = data.get('num_iterations')
+    temporal = float(data.get('temporal'))
+    max_time = float(data.get('max_time'))
+    year = 2017
 
-    result = predict(state, crop, area, prodAnt1, areaAnt1, prodAnt2, areaAnt2, prodAnt3, areaAnt3)
+    result = ant_colony_optimization(weights, state, year, number_crops, pheromone_initial, pheromone_decay, alpha, beta, num_ants, num_iterations, temporal, max_time)
 
-    return jsonify({'Yield': result})
+    return jsonify({'teste': result})
 
 
 

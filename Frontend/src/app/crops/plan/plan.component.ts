@@ -1,5 +1,6 @@
 import {Component, OnInit, OnDestroy  } from '@angular/core';
-import {Plan} from "./plan";
+import {AG} from "./AG";
+import { ACO } from './ACO';
 import {PlanService} from "../../services/plan.service";
 
 @Component({
@@ -69,18 +70,22 @@ export class PlanComponent implements OnInit, OnDestroy  {
     console.log("submit");
 
     if(this.isSubmitButtonEnabledAG() && this.canSubmitCostAG) {
-      let predict = new Plan();
-      this.planService.postPlan(predict).subscribe((data) => {
-        this.responseDataAG = JSON.parse(JSON.stringify(data));
+      let weights = [this.prodCostAG, this.cultCostAG, this.operCostAG, this.fixedCostAG];
+      let predict = new AG(weights, this.stateInputAG, 3, 50, 5, 0.1, true, 4);
+      this.planService.postAG(predict).subscribe((data) => {
+        //this.responseDataAG = JSON.parse(JSON.stringify(data));
+        console.log(JSON.parse(JSON.stringify(data)));
       });
     }
   }
  
   submitFormACO() {
     if(this.isSubmitButtonEnabledACO() && this.canSubmitCostACO) {
-      let predict = new Plan();
-      this.planService.postPlan(predict).subscribe((data) => {
-        this.responseDataACO = JSON.parse(JSON.stringify(data));
+      let weights = [this.prodCostACO, this.cultCostACO, this.operCostACO, this.fixedCostACO];
+      let predict = new ACO(weights, this.stateInputACO, this.numResultsACO, 1.0, 0.5, 1.0, 2.0, 5, 100, true, 4);
+      this.planService.postACO(predict).subscribe((data) => {
+        //this.responseDataACO = JSON.parse(JSON.stringify(data));
+        console.log(JSON.parse(JSON.stringify(data)));
       });
     }
   }
